@@ -1,0 +1,38 @@
+{
+  "model_url": "https://huggingface.co/roneneldan/TinyStories-1M",
+  "model_revision": "77f1b168e219585646439073245fe87e56b3023e",
+  "checkpoint_bytes": 48578813,
+  "model_license": "UNSPECIFIED in pinned card and repository tree; no redistribution permission asserted",
+  "blimp_url": "https://github.com/alexwarstadt/blimp",
+  "blimp_commit": "3e56b06fcabca9b30822fc66435fca6b1aa40bb1",
+  "blimp_license": "CC-BY 4.0",
+  "scope": "Eight new paradigms selected before running this model; distinct from previous Glimmer subset",
+  "files_sha256": {
+    "model/pytorch_model.bin": "07f9609ea882b8163ff3b23d40e2b82cb715d409631beb15c84b164f3877dae7",
+    "model/config.json": "ff74c30d5ebb5ab1da0f2ea479adf7197c504b42b5522a858c334ab91ed4958c",
+    "model/tokenizer.json": "f6ed3d307010c244c22aeffbde05f419cf277c23e64cf98b673cac5449cfeff5",
+    "model/tokenizer_config.json": "3d76da0fd37493fbfcd3f0fa9757753d31f92e1779ebd9130809b45546a60261",
+    "model/special_tokens_map.json": "98412137ae43c77f8af52eb51b19c3536d3242cb55339167d841005fa94a23b7",
+    "model/merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+    "model/vocab.json": "3ba3c3109ff33976c4bd966589c11ee14fcaa1f4c9e5e154c2ed7f99d80709e7",
+    "blimp/anaphor_number_agreement.jsonl": "05c16b8bfe4feb5b3552dc2c53d1742ce0c91d9a1c896684335bdddd4373cc9b",
+    "blimp/determiner_noun_agreement_2.jsonl": "8ae7eff7c7bd384ff5ef3113984834f4d78b34559203aa9d5cb14ea8394291a9",
+    "blimp/regular_plural_subject_verb_agreement_2.jsonl": "e5b4668811e63b00ac4c9569cb9553281a39c21df43256905ad78e59ae24942c",
+    "blimp/irregular_plural_subject_verb_agreement_2.jsonl": "9b22db814e7b7251f4abafe8beb9616f2f46eaa58f7cdb701cbc737cc8f1a124",
+    "blimp/irregular_past_participle_verbs.jsonl": "75a990117c1a403d3b479e0fbe170f6919c2408def738ffcea8c62b49b70a555",
+    "blimp/distractor_agreement_relational_noun.jsonl": "37c1553f4c6594b162256edce0f6b40bad1898b311c8aaa69605b526b6494a34",
+    "blimp/passive_1.jsonl": "e9374307bca5c24e9df18597a0859f7fb5ca4cfe5f136ec894d1ba69f4c90116",
+    "blimp/intransitive.jsonl": "9af9f3f30c891cd21623922b62fd97685552b4ae94a6cfd5617a5f0cb0f731b3",
+    "model/MODEL_CARD.md": "9d0688ba7929387e17ad310bbd0dd80e0dd8484bafc7846752dfb0b10b24f143",
+    "model/LEGACY_MODEL_README.md": "422ef5c71de03b225c364278eb6c173009f8655720dee2993870310022ab4f4c"
+  },
+  "remote_paths": {
+    "model/MODEL_CARD.md": "README.md",
+    "model/LEGACY_MODEL_README.md": "readme.md"
+  },
+  "compatibility_notes": "Remote README.md and readme.md collide on case-insensitive macOS; preserved under distinct local names and explicit remote-path mapping. This file-layout correction precedes any baseline or weight edits.",
+  "source_card_git_blobs": {
+    "model/MODEL_CARD.md": "81b75993516d7123dca68e1e36ba6bb305258772",
+    "model/LEGACY_MODEL_README.md": "db9f48303496108f64f5739d118abd0a028d2212"
+  }
+}

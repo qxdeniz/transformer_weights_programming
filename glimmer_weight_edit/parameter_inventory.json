@@ -1,0 +1,249 @@
+{
+  "parameters": [
+    {
+      "name": "model.embed_tokens.weight",
+      "shape": [
+        512,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8192
+    },
+    {
+      "name": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        16,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 256
+    },
+    {
+      "name": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        4,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 64
+    },
+    {
+      "name": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        4,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 64
+    },
+    {
+      "name": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        16,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 256
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        16,
+        24
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.0.input_layernorm.weight",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 16
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 16
+    },
+    {
+      "name": "model.layers.1.self_attn.q_proj.weight",
+      "shape": [
+        16,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 256
+    },
+    {
+      "name": "model.layers.1.self_attn.k_proj.weight",
+      "shape": [
+        4,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 64
+    },
+    {
+      "name": "model.layers.1.self_attn.v_proj.weight",
+      "shape": [
+        4,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 64
+    },
+    {
+      "name": "model.layers.1.self_attn.o_proj.weight",
+      "shape": [
+        16,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 256
+    },
+    {
+      "name": "model.layers.1.mlp.gate_proj.weight",
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.1.mlp.up_proj.weight",
+      "shape": [
+        24,
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.1.mlp.down_proj.weight",
+      "shape": [
+        16,
+        24
+      ],
+      "dtype": "torch.float32",
+      "scalars": 384
+    },
+    {
+      "name": "model.layers.1.input_layernorm.weight",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 16
+    },
+    {
+      "name": "model.layers.1.post_attention_layernorm.weight",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 16
+    },
+    {
+      "name": "model.norm.weight",
+      "shape": [
+        16
+      ],
+      "dtype": "torch.float32",
+      "scalars": 16
+    }
+  ],
+  "buffers": [
+    {
+      "name": "model.rotary_emb.inv_freq",
+      "shape": [
+        2
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "model.rotary_emb.original_inv_freq",
+      "shape": [
+        2
+      ],
+      "dtype": "torch.float32"
+    }
+  ],
+  "independent_parameters": 11856,
+  "alias_groups": [
+    [
+      "model.embed_tokens.weight",
+      "lm_head.weight"
+    ]
+  ],
+  "config": {
+    "transformers_version": "5.17.0",
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": "float32",
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "vocab_size": 512,
+    "hidden_size": 16,
+    "intermediate_size": 24,
+    "num_hidden_layers": 2,
+    "num_attention_heads": 4,
+    "num_key_value_heads": 1,
+    "hidden_act": "silu",
+    "max_position_embeddings": 512,
+    "initializer_range": 0.02,
+    "rms_norm_eps": 1e-06,
+    "use_cache": true,
+    "pad_token_id": null,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    "pretraining_tp": 1,
+    "tie_word_embeddings": true,
+    "rope_parameters": {
+      "rope_theta": 10000.0,
+      "rope_type": "default"
+    },
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "mlp_bias": false,
+    "head_dim": 4,
+    "_name_or_path": "",
+    "model_type": "llama",
+    "output_attentions": false
+  }
+}

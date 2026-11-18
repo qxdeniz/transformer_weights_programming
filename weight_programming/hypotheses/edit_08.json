@@ -1,0 +1,75 @@
+{
+  "family": "H3",
+  "coefficient": 0.3,
+  "hypothesis": "Correct a limited global 0-versus-1 readout bias analytically, while accepting the risk to genuine 1 answers.",
+  "evidence": "Leading-zero diagnostic errors 00228,00433,00606,00718,00436,00827,00915 favour 1 over 0 by small margins; 00003 has the opposite confusion.",
+  "formula": "ln_f.bias += margin * (embedding[0]-embedding[1]) / ||embedding[0]-embedding[1]||^2. This increases logit0-logit1 by exactly margin for a fixed hidden state.",
+  "prediction": "Some low-margin false carries into padded zero positions become zero; regressions to true ones may offset gains.",
+  "risk": "The same fixed bias acts at every output position and also changes other digit margins.",
+  "operations": [
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        0
+      ],
+      "value": -0.09555120284657839
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        1
+      ],
+      "value": 0.13578922836132012
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        2
+      ],
+      "value": 0.043642005392467015
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        3
+      ],
+      "value": -0.002218323858218385
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        4
+      ],
+      "value": -0.06248252986631939
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        5
+      ],
+      "value": 0.0012289021647663477
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        6
+      ],
+      "value": -0.12068611587976066
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        7
+      ],
+      "value": -0.00031663666262525807
+    }
+  ]
+}

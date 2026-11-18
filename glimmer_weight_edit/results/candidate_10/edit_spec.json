@@ -1,0 +1,78 @@
+{
+  "family": "H1+H2",
+  "hypothesis": "Compose disjoint best singleton hypotheses, with fixed coefficients.",
+  "prediction": "Combine the declared changes; inspect test only after freeze. Calibration can influence metric without changing computation.",
+  "risk": "Autoregressive and normalization interactions can cause additional regressions.",
+  "components": [
+    {
+      "family": "H1",
+      "coefficient": 0.95,
+      "hypothesis": "Tied embedding/readout self-copy paths contribute to repeated-token attractors; modestly shrink the three diagnosed rows.",
+      "evidence": "Diagnostic greedy prompts repeat comma token 15 (30–32 times), token 69 (24 times), and token 165 (32 times). All evidence is open diagnostic output.",
+      "formula": "Scale rows 15,69,165 of model.embed_tokens.weight, preserving lm_head tie.",
+      "prediction": "May reduce repetition on known diagnostic continuations and shift sentence likelihoods; it may only replace one repeated token with another.",
+      "risk": "Those tokens also encode legitimate text. Tied input/output changes can harm grammar preferences and other tokens may become new attractors."
+    },
+    {
+      "family": "H2",
+      "coefficient": 1.25,
+      "hypothesis": "Increase the gain of existing output evidence relative to the nearly uniform per-token penalty via the final RMSNorm scale.",
+      "evidence": "Every diagnostic pair with fewer good-sentence tokens is correct (286/286), every pair with more good-sentence tokens is wrong (0/309); same-length pairs are 261/429. Raw sentence scoring is strongly length dominated.",
+      "formula": "model.norm.weight *= coefficient; logits for each fixed prefix scale uniformly. This is probability calibration, not new computation.",
+      "prediction": "Sentence likelihood ordering can change even though exact greedy argmax ordering should remain unchanged. Any benefit is calibration of this metric, not evidence of improved free generation.",
+      "risk": "Overconfidence in wrong existing predictions can lower likelihood quality and pair accuracy."
+    }
+  ],
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          15,
+          16
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          69,
+          70
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          165,
+          166
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.norm.weight",
+      "factor": 1.25
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "diagnostic": {
+    "size": 1024,
+    "seed": 41001,
+    "sha256": "99b6d0bb2ca3ffc2e75eb582e36cfac32be5f0e409ab50666ce9dd8bf6726e14",
+    "distribution": {
+      "uniform": 256,
+      "single_carry": 128,
+      "chain_short": 128,
+      "chain_medium": 128,
+      "chain_long": 128,
+      "zero": 64,
+      "leading_zeros": 64,
+      "power10": 64,
+      "overflow11": 64
+    }
+  },
+  "validation": {
+    "size": 2048,
+    "seed": 41002,
+    "sha256": "7a80a10e1c891c7ca7b9b8d0ec1517007a36038ead0203b4b5a33357d3b69cc4",
+    "distribution": {
+      "uniform": 512,
+      "single_carry": 256,
+      "chain_short": 256,
+      "chain_medium": 256,
+      "chain_long": 256,
+      "zero": 128,
+      "leading_zeros": 128,
+      "power10": 128,
+      "overflow11": 128
+    }
+  },
+  "test_uniform": {
+    "size": 5000,
+    "seed": 41003,
+    "sha256": "eec3bcc9dabdbf3716b40b0c0b9646c31cff2d0b42f042c3e78838f29f3de5d8",
+    "distribution": {
+      "uniform": 5000
+    }
+  },
+  "test_stress": {
+    "size": 2000,
+    "seed": 41004,
+    "sha256": "e8b882030de65d384c4f52a67b4d65d36a3a6e90a408c6754790b48ebfa75bee",
+    "distribution": {
+      "single_carry": 300,
+      "chain_short": 300,
+      "chain_medium": 400,
+      "chain_long": 400,
+      "zero": 150,
+      "leading_zeros": 150,
+      "power10": 150,
+      "overflow11": 150
+    }
+  },
+  "test_exhaustive_00_99": {
+    "size": 10000,
+    "sha256": "f30e5ff144218de1bd1ea25266cc0cc5915d3cb5d368eef90c9f4195c95060dd",
+    "distribution": "All ordered pairs in [0,99]^2; includes known manual pairs"
+  }
+}

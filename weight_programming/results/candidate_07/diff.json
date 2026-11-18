@@ -1,0 +1,14 @@
+{
+  "changed_scalars": 8,
+  "total_independent_scalars": 1644,
+  "fraction": 0.004866180048661801,
+  "delta_l2": 0.10948644511831498,
+  "relative_l2": 0.0049593356715899985,
+  "tensors": {
+    "ln_f.bias": {
+      "changed": 8,
+      "delta_l2": 0.10948644511831498,
+      "max_abs_delta": 0.06789463758468628
+    }
+  }
+}

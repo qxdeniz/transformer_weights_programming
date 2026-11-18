@@ -1,0 +1,41 @@
+{
+  "changed_scalars": 32768,
+  "total_scalars": 3745984,
+  "fraction": 0.008747501324084674,
+  "delta_l2": 3.9397079998976716,
+  "relative_l2": 0.021214226987427233,
+  "tensors": {
+    "transformer.h.0.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.6268160857599574
+    },
+    "transformer.h.1.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.7764915048356488
+    },
+    "transformer.h.2.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.8641555684890043
+    },
+    "transformer.h.3.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.599521362593916
+    },
+    "transformer.h.4.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.254906777408112
+    },
+    "transformer.h.5.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.290037943922421
+    },
+    "transformer.h.6.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.822598430213394
+    },
+    "transformer.h.7.attn.attention.q_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 1.3896269767547966
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "n": 5000,
+  "strict_correct": 14,
+  "strict_em": 0.0028,
+  "upstream_digits_em": 0.0028,
+  "numeric_accuracy": 0.0028,
+  "format_validity": 0.9904,
+  "per_digit_accuracy_lsd_first": [
+    0.102,
+    0.9374,
+    0.1574,
+    0.935,
+    0.2922,
+    0.829,
+    0.9606,
+    0.9938,
+    0.9436,
+    0.9906,
+    0.6394
+  ],
+  "inference_seconds": 0.9668325410457328,
+  "examples_per_second": 5171.526389246234,
+  "termination_counts": {
+    "eos_at_expected_position": 4952,
+    "malformed_or_missing_eos": 47,
+    "premature_eos": 1
+  },
+  "by_category": {
+    "label:carry_chain": {
+      "n": 4398,
+      "correct": 13,
+      "strict_em": 0.0029558890404729424
+    },
+    "label:leading_zeros_10_digit_input": {
+      "n": 920,
+      "correct": 3,
+      "strict_em": 0.003260869565217391
+    },
+    "label:no_carry": {
+      "n": 12,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:overflow11": {
+      "n": 2502,
+      "correct": 10,
+      "strict_em": 0.003996802557953637
+    },
+    "label:single_carry": {
+      "n": 74,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:0": {
+      "n": 12,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:1": {
+      "n": 590,
+      "correct": 1,
+      "strict_em": 0.001694915254237288
+    },
+    "max_chain:10": {
+      "n": 10,
+      "correct": 1,
+      "strict_em": 0.1
+    },
+    "max_chain:2": {
+      "n": 1573,
+      "correct": 4,
+      "strict_em": 0.0025429116338207248
+    },
+    "max_chain:3": {
+      "n": 1301,
+      "correct": 2,
+      "strict_em": 0.0015372790161414297
+    },
+    "max_chain:4": {
+      "n": 801,
+      "correct": 4,
+      "strict_em": 0.004993757802746567
+    },
+    "max_chain:5": {
+      "n": 369,
+      "correct": 1,
+      "strict_em": 0.0027100271002710027
+    },
+    "max_chain:6": {
+      "n": 184,
+      "correct": 1,
+      "strict_em": 0.005434782608695652
+    },
+    "max_chain:7": {
+      "n": 98,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:8": {
+      "n": 44,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:9": {
+      "n": 18,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "source:uniform": {
+      "n": 5000,
+      "correct": 14,
+      "strict_em": 0.0028
+    }
+  },
+  "checkpoint_sha256": "627cff51bafa7fe333d9363bb5f91c3b901b3ad7f9519f37e2ca018baca7eff2",
+  "data_sha256": "eec3bcc9dabdbf3716b40b0c0b9646c31cff2d0b42f042c3e78838f29f3de5d8"
+}

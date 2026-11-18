@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "candidate_01",
+    "status": "complete",
+    "spec_sha256": "458941d010dad18f603f1266320efd1a5fc8b6c33f559b0c929fedf69a772af3",
+    "validation_correct": 1338,
+    "wrong_to_right": 79,
+    "right_to_wrong": 75,
+    "changed_scalars": 33280,
+    "total_scalars": 3745984,
+    "fraction": 0.008884181032273496,
+    "delta_l2": 0.34969869324866587,
+    "relative_l2": 0.0018830297717436347,
+    "tensors": {
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181343559991
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550306941872
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.13089047964740538
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318917962536
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.17575930948336713
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389758573354
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169781378315
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008163155609812038
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.09482344783439474
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344419440957
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10266939134262892
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523280875207
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615183801043
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167113309554
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11912856590165445
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.0058317526568602875
+      }
+    },
+    "preparation_seconds": 0.7810541660292074,
+    "checkpoint_sha256": "657fa155400780af603c99e8b54bd0476337caa0816d6371fb69f717088db435"
+  },
+  {
+    "id": "candidate_02",
+    "status": "complete",
+    "spec_sha256": "023b5f416a1ca030a99afe91e84b7c6323eddaa9d2aa0608fba632dd9faa1c74",
+    "validation_correct": 1332,
+    "wrong_to_right": 62,
+    "right_to_wrong": 64,
+    "changed_scalars": 33280,
+    "total_scalars": 3745984,
+    "fraction": 0.008884181032273496,
+    "delta_l2": 0.3496986971685366,
+    "relative_l2": 0.0018830297928510435,
+    "tensors": {
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181474385061
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550563615988
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.130890481615021
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318553502473
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.1757593124269564
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389711225362
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169884188935
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00816315578131632
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.0948234486335943
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344556445322
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.1026693923760836
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523228855383
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615239253732
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167160406759
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.1191285664912178
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005831752902507988
+      }
+    },
+    "preparation_seconds": 0.7332787499763072,
+    "checkpoint_sha256": "5b8d061f7222fd69148e85e55ee8122ec4ed0829f4dd42203c512f92943ee02f"
+  },
+  {
+    "id": "candidate_03",
+    "status": "complete",
+    "spec_sha256": "ac20953dc0214d030d7ab0f62f88963a62a87568956a5cbee5b4d37e6fa86d3d",
+    "validation_correct": 1331,
+    "wrong_to_right": 111,
+    "right_to_wrong": 114,
+    "changed_scalars": 33280,
+    "total_scalars": 3745984,
+    "fraction": 0.008884181032273496,
+    "delta_l2": 0.699397388876519,
+    "relative_l2": 0.0037660595562985285,
+    "tensors": {
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.2378836280392203
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.023461099965946253
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.2617809608530575
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.013880637310199449
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.35151861618092545
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.018020778753823484
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.2468433987832697
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.01632631344788465
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.18964689841314789
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.016018688554235796
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.20533878374303863
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011011047148419724
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.20645230457614921
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.013212334114884566
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.23825713282828406
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011663506194359638
+      }
+    },
+    "preparation_seconds": 0.6841123340418562,
+    "checkpoint_sha256": "2297c8a972a1ad4595bc102a99b5f967311e2828ac6ece3df8a9411ffbb9ef1c"
+  },
+  {
+    "id": "candidate_04",
+    "status": "complete",
+    "spec_sha256": "d5632a37348302e66b58cfc57d9b83abc297c07c0ba6341c55b6caa63853c5e8",
+    "validation_correct": 1294,
+    "wrong_to_right": 188,
+    "right_to_wrong": 228,
+    "changed_scalars": 131584,
+    "total_scalars": 3745984,
+    "fraction": 0.035126685004527515,
+    "delta_l2": 1.3531212368735428,
+    "relative_l2": 0.007286179854265648,
+    "tensors": {
+      "transformer.h.0.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.594994140212324
+      },
+      "transformer.h.0.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.024598250955349288
+      },
+      "transformer.h.1.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.4878574674362476
+      },
+      "transformer.h.1.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.019986202882979528
+      },
+      "transformer.h.2.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.4574212265641926
+      },
+      "transformer.h.2.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.01518330744122368
+      },
+      "transformer.h.3.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.4513504222919176
+      },
+      "transformer.h.3.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.014550188495563414
+      },
+      "transformer.h.4.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.4249105652700645
+      },
+      "transformer.h.4.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.014002666988479191
+      },
+      "transformer.h.5.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.4099868567792306
+      },
+      "transformer.h.5.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.01616149466650688
+      },
+      "transformer.h.6.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.43639813255765075
+      },
+      "transformer.h.6.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.01378114887172076
+      },
+      "transformer.h.7.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.5334164263543957
+      },
+      "transformer.h.7.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.015943246413593418
+      }
+    },
+    "preparation_seconds": 0.6938690420356579,
+    "checkpoint_sha256": "47bd9b33079b87a03f917df56282fd520950815981e340465cf74b98f5f357c3"
+  },
+  {
+    "id": "candidate_05",
+    "status": "complete",
+    "spec_sha256": "7e00a3430679c12783dfc7164519e879a9d4b40c00115e5cddb9be7d91d3f32f",
+    "validation_correct": 1307,
+    "wrong_to_right": 119,
+    "right_to_wrong": 146,
+    "changed_scalars": 131584,
+    "total_scalars": 3745984,
+    "fraction": 0.035126685004527515,
+    "delta_l2": 0.6765608221262324,
+    "relative_l2": 0.003643091023943669,
+    "tensors": {
+      "transformer.h.0.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.29749716042690044
+      },
+      "transformer.h.0.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.012299129042350686
+      },
+      "transformer.h.1.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.24392880678797174
+      },
+      "transformer.h.1.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009993103904868067
+      },
+      "transformer.h.2.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2287106820560041
+      },
+      "transformer.h.2.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00759165587920448
+      },
+      "transformer.h.3.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.22567527879901864
+      },
+      "transformer.h.3.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00727509597168575
+      },
+      "transformer.h.4.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21245534675755742
+      },
+      "transformer.h.4.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007001335909701676
+      },
+      "transformer.h.5.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2049934900802019
+      },
+      "transformer.h.5.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008080749656365053
+      },
+      "transformer.h.6.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21819913230916424
+      },
+      "transformer.h.6.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006890576455012318
+      },
+      "transformer.h.7.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2667082929351629
+      },
+      "transformer.h.7.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007971625860151477
+      }
+    },
+    "preparation_seconds": 0.6859215830336325,
+    "checkpoint_sha256": "d4d21f33beeecb3596101c23f13e9795bbb2cf78172fdaa6da1e84af1504bc61"
+  },
+  {
+    "id": "candidate_06",
+    "status": "complete",
+    "spec_sha256": "d53c222c0905d923cfde62bf94beba9f13ab0ff943e00b551e36938517601021",
+    "validation_correct": 1296,
+    "wrong_to_right": 127,
+    "right_to_wrong": 165,
+    "changed_scalars": 131584,
+    "total_scalars": 3745984,
+    "fraction": 0.035126685004527515,
+    "delta_l2": 0.6765608268442738,
+    "relative_l2": 0.0036430910493490043,
+    "tensors": {
+      "transformer.h.0.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2974971618937707
+      },
+      "transformer.h.0.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.012299128832439332
+      },
+      "transformer.h.1.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2439288090664888
+      },
+      "transformer.h.1.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00999310413034818
+      },
+      "transformer.h.2.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.22871068309071887
+      },
+      "transformer.h.2.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007591655698355983
+      },
+      "transformer.h.3.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.22567528072224105
+      },
+      "transformer.h.3.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007275096111095953
+      },
+      "transformer.h.4.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21245534773007574
+      },
+      "transformer.h.4.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007001335899275295
+      },
+      "transformer.h.5.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.204993492253842
+      },
+      "transformer.h.5.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00808074967941268
+      },
+      "transformer.h.6.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21819913369893207
+      },
+      "transformer.h.6.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006890577183867634
+      },
+      "transformer.h.7.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.266708295064878
+      },
+      "transformer.h.7.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007971626020282296
+      }
+    },
+    "preparation_seconds": 0.6677623330033384,
+    "checkpoint_sha256": "1ffb53ef1fb046365696eb9485d58643290846a5fa8f7364e9ba9ea4b93076bc"
+  },
+  {
+    "id": "candidate_07",
+    "status": "complete",
+    "spec_sha256": "55da8bcf33db6b42b4aee5cc56d08ddfdc7e0cf8d9dbc76a3a4ebe05fb738041",
+    "validation_correct": 1341,
+    "wrong_to_right": 29,
+    "right_to_wrong": 22,
+    "changed_scalars": 32768,
+    "total_scalars": 3745984,
+    "fraction": 0.008747501324084674,
+    "delta_l2": 3.939706784624888,
+    "relative_l2": 0.021214220443522787,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.6268158903684027
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.7764912646112828
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8641550019500295
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.5995208730205783
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2549063719604718
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2900375336112362
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8225978781863275
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.3896265483134094
+      }
+    },
+    "preparation_seconds": 0.6763950829626992,
+    "checkpoint_sha256": "fd2ffc11262d4e1dd3258d548ce3ed66eddf1bdae100f81e1baabadaa38ff458"
+  },
+  {
+    "id": "candidate_08",
+    "status": "complete",
+    "spec_sha256": "ac72e7f00d1289afa370a1985393b9dde8a36efcc769fa163d9df00ddc62da7c",
+    "validation_correct": 1328,
+    "wrong_to_right": 25,
+    "right_to_wrong": 31,
+    "changed_scalars": 32768,
+    "total_scalars": 3745984,
+    "fraction": 0.008747501324084674,
+    "delta_l2": 3.9397079998976716,
+    "relative_l2": 0.021214226987427233,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.6268160857599574
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.7764915048356488
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8641555684890043
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.599521362593916
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.254906777408112
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.290037943922421
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.822598430213394
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.3896269767547966
+      }
+    },
+    "preparation_seconds": 0.6992660000105388,
+    "checkpoint_sha256": "0ae0fb9a03e96ffd1a59b9666e28825b9d5a3bd6430276708ff9d562bc96a051"
+  },
+  {
+    "id": "candidate_09",
+    "status": "complete",
+    "spec_sha256": "81b376cce8cdcbddd39bcadfcce04c0c0862cdbdd6c39a1c20396aab03ea37d6",
+    "validation_correct": 1323,
+    "wrong_to_right": 55,
+    "right_to_wrong": 66,
+    "changed_scalars": 32768,
+    "total_scalars": 3745984,
+    "fraction": 0.008747501324084674,
+    "delta_l2": 9.849267657468314,
+    "relative_l2": 0.05303555485606688,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.567039835334709
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.9412283003640434
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 4.660387826308466
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 3.9988024712388563
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 3.137266171684983
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 3.22509403699591
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 4.556495021696691
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 3.474066618674516
+      }
+    },
+    "preparation_seconds": 0.7582869580364786,
+    "checkpoint_sha256": "7c29ee6e2221b275d08c577b061d3fcc4b5f1efedbada4b966b34e166008b959"
+  },
+  {
+    "id": "candidate_10",
+    "status": "complete",
+    "spec_sha256": "4a793eec2209866186212ed657865626332f3279366a0f350a3fbc6a118c92f3",
+    "validation_correct": 1306,
+    "wrong_to_right": 104,
+    "right_to_wrong": 132,
+    "changed_scalars": 164864,
+    "total_scalars": 3745984,
+    "fraction": 0.04401086603680101,
+    "delta_l2": 0.7615928847461405,
+    "relative_l2": 0.0041009649266985715,
+    "tensors": {
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181343559991
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550306941872
+      },
+      "transformer.h.0.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.29749716042690044
+      },
+      "transformer.h.0.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.012299129042350686
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.13089047964740538
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318917962536
+      },
+      "transformer.h.1.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.24392880678797174
+      },
+      "transformer.h.1.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009993103904868067
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.17575930948336713
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389758573354
+      },
+      "transformer.h.2.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2287106820560041
+      },
+      "transformer.h.2.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00759165587920448
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169781378315
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008163155609812038
+      },
+      "transformer.h.3.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.22567527879901864
+      },
+      "transformer.h.3.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00727509597168575
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.09482344783439474
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344419440957
+      },
+      "transformer.h.4.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21245534675755742
+      },
+      "transformer.h.4.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007001335909701676
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10266939134262892
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523280875207
+      },
+      "transformer.h.5.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2049934900802019
+      },
+      "transformer.h.5.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008080749656365053
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615183801043
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167113309554
+      },
+      "transformer.h.6.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21819913230916424
+      },
+      "transformer.h.6.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006890576455012318
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11912856590165445
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.0058317526568602875
+      },
+      "transformer.h.7.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2667082929351629
+      },
+      "transformer.h.7.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007971625860151477
+      }
+    },
+    "preparation_seconds": 0.683475083031226,
+    "checkpoint_sha256": "1e279ff214f72aa5c0c641a35970becc71132414905d45e45d8cbbb4dd601bf3"
+  },
+  {
+    "id": "candidate_11",
+    "status": "complete",
+    "spec_sha256": "deac7c123482f28e7d8ea1bc9ece38ecbe4557ac626c4bffbd97b0329406d9b0",
+    "validation_correct": 1344,
+    "wrong_to_right": 82,
+    "right_to_wrong": 72,
+    "changed_scalars": 66048,
+    "total_scalars": 3745984,
+    "fraction": 0.017631682356358168,
+    "delta_l2": 3.9551964205181007,
+    "relative_l2": 0.02129762780564195,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.6268158903684027
+      },
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181343559991
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550306941872
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.7764912646112828
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.13089047964740538
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318917962536
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8641550019500295
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.17575930948336713
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389758573354
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.5995208730205783
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169781378315
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008163155609812038
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2549063719604718
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.09482344783439474
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344419440957
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2900375336112362
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10266939134262892
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523280875207
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8225978781863275
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615183801043
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167113309554
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.3896265483134094
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11912856590165445
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.0058317526568602875
+      }
+    },
+    "preparation_seconds": 0.7033636250416748,
+    "checkpoint_sha256": "0b2b17e55baba2819d0ff358464dd4f52cc375d6d2f262fc4dbfe738c17ab547"
+  },
+  {
+    "id": "candidate_12",
+    "status": "complete",
+    "spec_sha256": "e0ca9b07717d8677c1749ecc741b96c16e633c4ae9c547e31d36f9435c8a2db9",
+    "validation_correct": 1312,
+    "wrong_to_right": 105,
+    "right_to_wrong": 127,
+    "changed_scalars": 197632,
+    "total_scalars": 3745984,
+    "fraction": 0.05275836736088568,
+    "delta_l2": 4.012644174470909,
+    "relative_l2": 0.021606967912143345,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.6268158903684027
+      },
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181343559991
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550306941872
+      },
+      "transformer.h.0.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.29749716042690044
+      },
+      "transformer.h.0.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.012299129042350686
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.7764912646112828
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.13089047964740538
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318917962536
+      },
+      "transformer.h.1.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.24392880678797174
+      },
+      "transformer.h.1.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009993103904868067
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8641550019500295
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.17575930948336713
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389758573354
+      },
+      "transformer.h.2.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2287106820560041
+      },
+      "transformer.h.2.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00759165587920448
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.5995208730205783
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169781378315
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008163155609812038
+      },
+      "transformer.h.3.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.22567527879901864
+      },
+      "transformer.h.3.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.00727509597168575
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2549063719604718
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.09482344783439474
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344419440957
+      },
+      "transformer.h.4.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21245534675755742
+      },
+      "transformer.h.4.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007001335909701676
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2900375336112362
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10266939134262892
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523280875207
+      },
+      "transformer.h.5.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2049934900802019
+      },
+      "transformer.h.5.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008080749656365053
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8225978781863275
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615183801043
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167113309554
+      },
+      "transformer.h.6.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.21819913230916424
+      },
+      "transformer.h.6.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006890576455012318
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.3896265483134094
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11912856590165445
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.0058317526568602875
+      },
+      "transformer.h.7.mlp.c_proj.weight": {
+        "changed": 16384,
+        "delta_l2": 0.2667082929351629
+      },
+      "transformer.h.7.mlp.c_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.007971625860151477
+      }
+    },
+    "preparation_seconds": 0.7049676250317134,
+    "checkpoint_sha256": "9cb98a3f841eb635235a4ef6860c3ab69aabe1d02446dd0f31270a2b2df00a39"
+  }
+]

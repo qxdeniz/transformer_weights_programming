@@ -1,0 +1,27 @@
+{
+  "repository_url": "https://github.com/anadim/smallest-addition-transformer-codex",
+  "commit_sha": "9de34061c8c268e0fc2198e473911a62b152254c",
+  "commit_url": "https://github.com/anadim/smallest-addition-transformer-codex/commit/9de34061c8c268e0fc2198e473911a62b152254c",
+  "checkpoint_path": "checkpoints/best.pt",
+  "checkpoint_bytes": 12202,
+  "checkpoint_sha256": "a919e48dca049119369bec56b76a07a9cb4c804bc94c13aba9ade0c33092c7ec",
+  "files_sha256": {
+    "requirements.txt": "a27158e8cf2c2e2a345f56b60d7ebb1ec9f120a0307994d5e4348b9ab8a0c56d",
+    "README.md": "c29b5e886e8cfb7948e93f1b2639a05dfc062284cd4d82e92b9e0a1a2885f6d2",
+    "checkpoints/best.pt": "a919e48dca049119369bec56b76a07a9cb4c804bc94c13aba9ade0c33092c7ec",
+    "src/__init__.py": "67114333e17cfa29d103c018332f0c5f6c83a4a43ca8c7a1d0206390ef6caba6",
+    "src/model.py": "e936acd2957bb3dfa21acf0c64edbf0f98b394258f37a7d27982711d65094426",
+    "src/eval.py": "d1c20626498ecfe3b317cf1ec443ee62ed144fd286870c648f101da3cfcb4e02",
+    "src/data.py": "fb2801df5ceaab71a5cc8fc2fbf7cf1c92262b742df5f24a7874330dcde9ba72"
+  },
+  "code_license": "UNSPECIFIED: no LICENSE/COPYING file in pinned root tree",
+  "weights_license": "UNSPECIFIED: no separate published license found",
+  "redistribution_permission_claimed": false,
+  "access_method": "Public GitHub API and pinned raw URLs via browser network tool; shell DNS unavailable",
+  "context_urls": [
+    "https://rikiyat.github.io/blog/weight-space-programming/",
+    "https://github.com/RikiyaT/lm_understand-logs",
+    "https://gist.github.com/yieldthought/a48b8d690d31039fadddd2bf297cae99"
+  ],
+  "context_note": "Context and analytical constructions were not substituted for the original checkpoint"
+}

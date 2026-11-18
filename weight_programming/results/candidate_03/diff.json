@@ -1,0 +1,19 @@
+{
+  "changed_scalars": 36,
+  "total_independent_scalars": 1644,
+  "fraction": 0.021897810218978103,
+  "delta_l2": 0.7648105341583703,
+  "relative_l2": 0.03464312098142018,
+  "tensors": {
+    "blocks.0.attn.qkv.weight": {
+      "changed": 32,
+      "delta_l2": 0.761930142686318,
+      "max_abs_delta": 0.33256208896636963
+    },
+    "blocks.0.attn.qkv.bias": {
+      "changed": 4,
+      "delta_l2": 0.0663144842822351,
+      "max_abs_delta": 0.049585118889808655
+    }
+  }
+}

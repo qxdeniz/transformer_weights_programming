@@ -1,0 +1,14 @@
+{
+  "changed_scalars": 8,
+  "total_independent_scalars": 1644,
+  "fraction": 0.004866180048661801,
+  "delta_l2": 0.3266023420055498,
+  "relative_l2": 0.014793892005376744,
+  "tensors": {
+    "token_emb.weight": {
+      "changed": 8,
+      "delta_l2": 0.3266023420055498,
+      "max_abs_delta": 0.16959643363952637
+    }
+  }
+}

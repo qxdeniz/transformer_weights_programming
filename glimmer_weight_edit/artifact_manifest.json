@@ -1,0 +1,20 @@
+{
+  "original_safetensors_sha256": "e61d0b7487386d59d6bf6d62bb9cab28e43b3be18c678f00a9a27cdf41e86c01",
+  "original_tensor_sha256": "1675976640d8e9573c1e136e544b5ab50d163f8dbb3873b4cccdba461feafbba",
+  "selected_checkpoint_sha256": "496be41038b6f721b37e36ce8303d9ccea6643849e4ff54e3743995d40494735",
+  "selected_tensor_sha256": "24a78b1cb2cb0661eba838ef655f844f558987ece1b07dfdf7bd23d6b90a0dce",
+  "diff": {
+    "changed_scalars": 16,
+    "total_scalars": 11856,
+    "fraction": 0.001349527665317139,
+    "delta_l2": 1.0967919777408952,
+    "relative_l2": 0.10437248194163538,
+    "tensors": {
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 1.0967919777408952
+      }
+    }
+  },
+  "note": "Canonical independent float32 tensor hash is serialization-independent on the recorded little-endian platform. Serialized checkpoint bytes may vary with filename/PyTorch version."
+}

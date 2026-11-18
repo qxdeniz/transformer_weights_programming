@@ -1,0 +1,36 @@
+{
+  "base_tensor_sha256": "9b68de4c1afc985f5ffe7e96386d167a8a536b9bafe8be4237bb63fe3f0a0250",
+  "selected_tensor_sha256": "2875dcf8f093fc0876388fd4531795eaff6ce8bcead77b755a3d8edd99a4b50f",
+  "original_checkpoint_sha256": "a919e48dca049119369bec56b76a07a9cb4c804bc94c13aba9ade0c33092c7ec",
+  "selected_checkpoint_sha256": "c3cbe12e56b9a1b547d42bf2952e2ee392d9625854197dbe7f5035ed069ed2fc",
+  "diff": {
+    "changed_scalars": 52,
+    "total_independent_scalars": 1644,
+    "fraction": 0.031630170316301706,
+    "delta_l2": 0.5609934991661901,
+    "relative_l2": 0.025410954469646765,
+    "tensors": {
+      "token_emb.weight": {
+        "changed": 8,
+        "delta_l2": 0.3266023420055498,
+        "max_abs_delta": 0.16959643363952637
+      },
+      "blocks.0.attn.qkv.weight": {
+        "changed": 32,
+        "delta_l2": 0.12698824061587477,
+        "max_abs_delta": 0.055426955223083496
+      },
+      "blocks.0.attn.qkv.bias": {
+        "changed": 4,
+        "delta_l2": 0.01105240737189028,
+        "max_abs_delta": 0.00826418399810791
+      },
+      "ln_f.bias": {
+        "changed": 8,
+        "delta_l2": 0.4379457127770366,
+        "max_abs_delta": 0.27157849073410034
+      }
+    }
+  },
+  "note": "Canonical independent tensor hash is serialization-independent on the recorded little-endian float32 platform. Checkpoint file bytes can differ across torch serialization versions."
+}

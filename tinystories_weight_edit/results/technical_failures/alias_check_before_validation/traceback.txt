@@ -1,0 +1,18 @@
+Observed stderr from the failed first application, before any candidate validation evaluation:
+
+Traceback (most recent call last):
+  File "/Users/deniz_mlg/Desktop/Проекты/ll21/tinystories_weight_edit/experiment.py", line 165, in <module>
+    if __name__=='__main__':main()
+  File "/Users/deniz_mlg/Desktop/Проекты/ll21/tinystories_weight_edit/experiment.py", line 160, in main
+    elif a.stage=='edit':edit(a.spec)
+  File "/Users/deniz_mlg/Desktop/Проекты/ll21/tinystories_weight_edit/experiment.py", line 109, in edit
+    assert m.lm_head.weight is m.model.embed_tokens.weight
+  File "/opt/homebrew/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+AttributeError: 'GPTNeoForCausalLM' object has no attribute 'model'
+
+The old evaluator and protocol are preserved next to this file. The corrected
+check refers to m.transformer.wte.weight. Baseline predictions were rerun and
+verified equal before restarting candidate evaluations. This failed application
+used zero full validation evaluations; all twelve completed evaluations are
+recorded separately in results/attempts.json.

@@ -1,0 +1,19 @@
+{
+  "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.3.19.1)]",
+  "pytorch": "2.9.1",
+  "numpy": "2.2.6",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "cpu_count": 8,
+  "device": "cpu",
+  "threads": 1,
+  "dtype": "float32",
+  "config": {
+    "vocab_size": 36,
+    "embed_dim": 64,
+    "num_heads": 4,
+    "num_layers": 2,
+    "ff_dim": 256,
+    "max_seq_len": 16,
+    "dropout": 0.1
+  }
+}

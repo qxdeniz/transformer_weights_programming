@@ -1,0 +1,9 @@
+{
+  "keys_shapes_dtypes_fixed": true,
+  "buffers_fixed": true,
+  "aliases_fixed": true,
+  "finite": true,
+  "outside_mask_fixed": true,
+  "rollback_equal": true,
+  "fresh_process_equal": true
+}

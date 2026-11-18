@@ -1,0 +1,73 @@
+{
+  "changed_scalars": 33280,
+  "total_scalars": 3745984,
+  "fraction": 0.008884181032273496,
+  "delta_l2": 0.699397388876519,
+  "relative_l2": 0.0037660595562985285,
+  "tensors": {
+    "transformer.h.0.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.2378836280392203
+    },
+    "transformer.h.0.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.023461099965946253
+    },
+    "transformer.h.1.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.2617809608530575
+    },
+    "transformer.h.1.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.013880637310199449
+    },
+    "transformer.h.2.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.35151861618092545
+    },
+    "transformer.h.2.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.018020778753823484
+    },
+    "transformer.h.3.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.2468433987832697
+    },
+    "transformer.h.3.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.01632631344788465
+    },
+    "transformer.h.4.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.18964689841314789
+    },
+    "transformer.h.4.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.016018688554235796
+    },
+    "transformer.h.5.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.20533878374303863
+    },
+    "transformer.h.5.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.011011047148419724
+    },
+    "transformer.h.6.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.20645230457614921
+    },
+    "transformer.h.6.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.013212334114884566
+    },
+    "transformer.h.7.attn.attention.out_proj.weight": {
+      "changed": 4096,
+      "delta_l2": 0.23825713282828406
+    },
+    "transformer.h.7.attn.attention.out_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.011663506194359638
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "n": 10000,
+  "strict_correct": 0,
+  "strict_em": 0.0,
+  "upstream_digits_em": 0.0,
+  "numeric_accuracy": 0.0,
+  "format_validity": 0.8272,
+  "per_digit_accuracy_lsd_first": [
+    0.1,
+    0.9068,
+    0.2593,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.1175
+  ],
+  "inference_seconds": 1.9513320840196684,
+  "examples_per_second": 5124.704340124613,
+  "termination_counts": {
+    "eos_at_expected_position": 8272,
+    "malformed_or_missing_eos": 1728
+  },
+  "by_category": {
+    "label:carry_chain": {
+      "n": 2475,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:leading_zeros_10_digit_input": {
+      "n": 10000,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:no_carry": {
+      "n": 3025,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:power10": {
+      "n": 396,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:single_carry": {
+      "n": 4500,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "label:zero_operand": {
+      "n": 199,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:0": {
+      "n": 3025,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:1": {
+      "n": 4500,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "max_chain:2": {
+      "n": 2475,
+      "correct": 0,
+      "strict_em": 0.0
+    },
+    "source:exhaustive_ordered": {
+      "n": 10000,
+      "correct": 0,
+      "strict_em": 0.0
+    }
+  },
+  "checkpoint_sha256": "f0597a75e664ffc709068698e31252b7d3cbb2a008c3a5040955c1ba70bf5f07",
+  "data_sha256": "f30e5ff144218de1bd1ea25266cc0cc5915d3cb5d368eef90c9f4195c95060dd"
+}

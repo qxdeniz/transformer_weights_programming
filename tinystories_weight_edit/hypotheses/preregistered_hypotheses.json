@@ -1,0 +1,47 @@
+{
+  "H1": {
+    "observation": "Diagnostic distractor-agreement accuracy is 57/128; correct main-subject agreement often loses to a nearby plural distractor. Existing attention branches mix context, with layer-output norms 0.13–0.69.",
+    "hypothesis": "Change the gain of contextual attention relative to the residual stream throughout the existing blocks.",
+    "formula": "For all eight blocks, scale attention.out_proj.weight and out_proj.bias together.",
+    "coefficients": [
+      0.9,
+      1.1,
+      1.2
+    ],
+    "prediction": "A stronger contextual branch may improve agreement decisions; a weaker counter-direction tests that interpretation. Observe all regressions.",
+    "risk": "All attention computations are rescaled, including useful ones. Stronger incorrect attention may worsen grammar and story generation."
+  },
+  "H2": {
+    "observation": "Read-only diagnostic mean FFN output norm is 0.877 in block 0 and 0.222 in block 7; block-7 residual before FFN is 0.173. Many mistakes favour familiar lexical alternatives or distractor agreement.",
+    "hypothesis": "Rebalance FFN updates that can overwrite contextual evidence; reduced gain may preserve useful attention/residual information.",
+    "formula": "For all eight blocks, scale mlp.c_proj.weight and c_proj.bias together. Do not change activation, width, forward, embeddings or readout.",
+    "coefficients": [
+      0.8,
+      0.9,
+      1.1
+    ],
+    "prediction": "Modest reduction can help contextual agreement, while an increase is an explicit counter-direction. Norms alone are not causal proof.",
+    "risk": "FFN updates are co-adapted to residual and attention paths. Even modest global rescaling can destroy useful cancellations or lexical knowledge."
+  },
+  "H3": {
+    "observation": "Diagnostic agreement failures can involve competition between source tokens. This tests attention concentration separately from H1 output amplitude; it does not assume the correct token always ranks first.",
+    "hypothesis": "Change the concentration of existing attention distributions without replacing their learned directions.",
+    "formula": "For all eight blocks, scale attention.q_proj.weight. Query-key scores scale by the same factor; K, V and the causal/local mask remain fixed.",
+    "coefficients": [
+      0.8,
+      1.2,
+      1.5
+    ],
+    "prediction": "Sharper or softer selection can alter agreement evidence where context sources compete; validation decides whether the predicted benefit exists.",
+    "risk": "Sharpening a wrong maximum reinforces it; softening can dilute a useful precise source."
+  },
+  "combinations": {
+    "rule": "Choose best singleton in each family by the registered validation ranking; evaluate H1+H2, H1+H3, H1+H2+H3 with those exact coefficients. No new coefficient fitting.",
+    "count": 3
+  },
+  "budget": 12,
+  "minimum_changed_scalars": 10000,
+  "test_access": false,
+  "degrees_of_freedom": "Many scalar values change, but the search has only explicit group coefficients; this is not evidence of many independently designed computations.",
+  "forbidden_methods": "No gradients, optimizer, regression, evolutionary method, random candidate search, training or output-temperature-only edit."
+}

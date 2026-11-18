@@ -1,0 +1,13 @@
+{
+  "changed_scalars": 256,
+  "total_scalars": 11856,
+  "fraction": 0.021592442645074223,
+  "delta_l2": 0.4484308093272207,
+  "relative_l2": 0.042673394315831836,
+  "tensors": {
+    "model.layers.1.self_attn.o_proj.weight": {
+      "changed": 256,
+      "delta_l2": 0.44843080932722057
+    }
+  }
+}

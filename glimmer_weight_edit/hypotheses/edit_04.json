@@ -1,0 +1,16 @@
+{
+  "family": "H2",
+  "coefficient": 1.25,
+  "hypothesis": "Increase the gain of existing output evidence relative to the nearly uniform per-token penalty via the final RMSNorm scale.",
+  "evidence": "Every diagnostic pair with fewer good-sentence tokens is correct (286/286), every pair with more good-sentence tokens is wrong (0/309); same-length pairs are 261/429. Raw sentence scoring is strongly length dominated.",
+  "formula": "model.norm.weight *= coefficient; logits for each fixed prefix scale uniformly. This is probability calibration, not new computation.",
+  "prediction": "Sentence likelihood ordering can change even though exact greedy argmax ordering should remain unchanged. Any benefit is calibration of this metric, not evidence of improved free generation.",
+  "risk": "Overconfidence in wrong existing predictions can lower likelihood quality and pair accuracy.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "model.norm.weight",
+      "factor": 1.25
+    }
+  ]
+}

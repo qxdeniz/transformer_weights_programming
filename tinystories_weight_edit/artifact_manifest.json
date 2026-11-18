@@ -1,0 +1,112 @@
+{
+  "original_checkpoint_sha256": "07f9609ea882b8163ff3b23d40e2b82cb715d409631beb15c84b164f3877dae7",
+  "original_tensor_sha256": "9683e4b4302e1dd6297a92a7b70de88db0325e5dc48a1bee8f9d4d8530d0fd59",
+  "selected_checkpoint_sha256": "0b2b17e55baba2819d0ff358464dd4f52cc375d6d2f262fc4dbfe738c17ab547",
+  "selected_tensor_sha256": "860a82ae8e818945dae4d9fd6e2769d25c783636bbb78df91a18ff11a17a7834",
+  "diff": {
+    "changed_scalars": 66048,
+    "total_scalars": 3745984,
+    "fraction": 0.017631682356358168,
+    "delta_l2": 3.9551964205181007,
+    "relative_l2": 0.02129762780564195,
+    "tensors": {
+      "transformer.h.0.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.6268158903684027
+      },
+      "transformer.h.0.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11894181343559991
+      },
+      "transformer.h.0.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.011730550306941872
+      },
+      "transformer.h.1.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.7764912646112828
+      },
+      "transformer.h.1.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.13089047964740538
+      },
+      "transformer.h.1.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006940318917962536
+      },
+      "transformer.h.2.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8641550019500295
+      },
+      "transformer.h.2.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.17575930948336713
+      },
+      "transformer.h.2.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.009010389758573354
+      },
+      "transformer.h.3.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.5995208730205783
+      },
+      "transformer.h.3.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.12342169781378315
+      },
+      "transformer.h.3.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008163155609812038
+      },
+      "transformer.h.4.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2549063719604718
+      },
+      "transformer.h.4.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.09482344783439474
+      },
+      "transformer.h.4.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.008009344419440957
+      },
+      "transformer.h.5.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.2900375336112362
+      },
+      "transformer.h.5.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10266939134262892
+      },
+      "transformer.h.5.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.005505523280875207
+      },
+      "transformer.h.6.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.8225978781863275
+      },
+      "transformer.h.6.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.10322615183801043
+      },
+      "transformer.h.6.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.006606167113309554
+      },
+      "transformer.h.7.attn.attention.q_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 1.3896265483134094
+      },
+      "transformer.h.7.attn.attention.out_proj.weight": {
+        "changed": 4096,
+        "delta_l2": 0.11912856590165445
+      },
+      "transformer.h.7.attn.attention.out_proj.bias": {
+        "changed": 64,
+        "delta_l2": 0.0058317526568602875
+      }
+    }
+  },
+  "note": "Canonical independent float32 tensor hash is serialization-independent on the recorded little-endian platform. Serialized checkpoint bytes may vary with filename/PyTorch version."
+}

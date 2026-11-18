@@ -1,0 +1,24 @@
+{
+  "repository": "https://huggingface.co/spaces/slahiri/small_calculator_model",
+  "revision": "8c94cc017776166ccb84ca291e5beec39e3eb6ad",
+  "github_repository": "https://github.com/slahiri/small_calculator_model",
+  "github_commit": "a99afc3932b17671e0bcc0852f79f83f8fd56637",
+  "files_sha256": {
+    "calculator_llm.py": "ee54404fa50b0b37443183d3d776873f9f3b8571a9c8e6dd14a01f1db8154871",
+    "config.json": "0a8af3139ac244c80e3c9920a84d5d695434af772a099aa86080ee5925bce712",
+    "vocab.json": "0610a7af4d3bb39f58861943e8e64073fabd8ed91b86901325a1b8687f1ecd82",
+    "model.pt": "ff38ef2ee1e1e019f0c10a129bafe2c407a5ad19995499afec4dd13e1aed1075",
+    "requirements.txt": "57f3b0239c46441bf06fc18cfd0e1ffbb5994ec3cfaa562ce5a8e40a93844174",
+    "test_data.json": "c57ebefcc20fb45e3af9c051f1e01ccc38ce5809a1d0ebfdd58be02c00856685",
+    "README.md": "1f350adb82aaf028d3491a4487c863436b5b296556c6d5c3da5434cc91f5091f",
+    "GITHUB_README.md": "0f88824ded2cca5d1ad673e0ad1ec58d5086c0fc5211a988d5293b45d61e7723",
+    "github/src/tokenizer.py": "a9a35580230088a82c257eaa3d644096733fcd92df20a93e60b02182283ec2b0",
+    "github/src/data.py": "336a70a0ea3ff45e2be3a601a033a15010d9b8ac1a5751c1ce6abc2effe00a26",
+    "github/src/model.py": "271165b23b2858794fe27401e3d8a6e8f5796b0bd25dbf40da010fbe3607b9e9",
+    "github/src/generate.py": "3ab879ada29105633a5895d28a4131031790009d3c764691d750147228ce45d6",
+    "github/src/train.py": "116bef288a6a5f5c58edc5540fdd4e9463f4afb25dd8566eba8d07356d94c868"
+  },
+  "checkpoint_bytes": 434201,
+  "license": "MIT claimed in pinned GitHub README, but linked LICENSE file is absent from tree; Space card has no separate weights license. No additional redistribution right is assumed.",
+  "checkpoint_lfs_resolved": true
+}

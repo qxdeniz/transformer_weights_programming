@@ -1,0 +1,142 @@
+{
+  "family": "H1+H2+H3",
+  "hypothesis": "Compose disjoint, explicitly proposed corrections.",
+  "prediction": "Combine current-column concentration, termination and readout corrections where applicable.",
+  "risk": "Interactions through autoregressive prefixes may create additional errors.",
+  "components": [
+    {
+      "family": "H1",
+      "coefficient": 1.05,
+      "hypothesis": "Head 1 is usually a near-one-hot current-column reader; sharpen the existing attention scores by scaling its query affine map.",
+      "evidence": "Diagnostic 00897: head 1 puts 0.855 on current P52 but 0.129 on previous P00; 00218 and 00366 also show current-column contamination.",
+      "formula": "Wq[4:8,:] *= factor; bq[4:8] *= factor. QK scores for head 1 scale by factor; K,V,projection and all architecture stay fixed.",
+      "prediction": "Reduced contamination where the correct source already ranks first; middle-digit and final-carry errors may decrease.",
+      "risk": "Sharpening a wrong first-ranked location can reinforce it and introduce regressions."
+    },
+    {
+      "family": "H2",
+      "coefficient": 1.15,
+      "hypothesis": "A small EOS readout margin can be corrected locally. The EOS embedding is tied, but EOS never appears in a correctly formatted input prefix.",
+      "evidence": "Diagnostic 00015 and 00141 generate all 11 sum digits correctly but digit 5 outranks EOS on final step by 1.55 and 1.05 logits.",
+      "formula": "token_emb.weight[112,:] *= factor; preserve alias with lm_head.weight.",
+      "prediction": "Correct missing termination on already correct sums; digit-only accuracy need not improve.",
+      "risk": "EOS may overtake a digit early. Such cases remain errors under strict EM."
+    },
+    {
+      "family": "H3",
+      "coefficient": 0.6,
+      "hypothesis": "Correct a limited global 0-versus-1 readout bias analytically, while accepting the risk to genuine 1 answers.",
+      "evidence": "Leading-zero diagnostic errors 00228,00433,00606,00718,00436,00827,00915 favour 1 over 0 by small margins; 00003 has the opposite confusion.",
+      "formula": "ln_f.bias += margin * (embedding[0]-embedding[1]) / ||embedding[0]-embedding[1]||^2. This increases logit0-logit1 by exactly margin for a fixed hidden state.",
+      "prediction": "Some low-margin false carries into padded zero positions become zero; regressions to true ones may offset gains.",
+      "risk": "The same fixed bias acts at every output position and also changes other digit margins."
+    }
+  ],
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "blocks.0.attn.qkv.weight",
+      "slices": [
+        [
+          4,
+          8
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 1.05
+    },
+    {
+      "kind": "scale",
+      "tensor": "blocks.0.attn.qkv.bias",
+      "slices": [
+        [
+          4,
+          8
+        ]
+      ],
+      "factor": 1.05
+    },
+    {
+      "kind": "scale",
+      "tensor": "token_emb.weight",
+      "slices": [
+        [
+          112,
+          113
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 1.15
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        0
+      ],
+      "value": -0.19110240569315678
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        1
+      ],
+      "value": 0.27157845672264025
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        2
+      ],
+      "value": 0.08728401078493403
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        3
+      ],
+      "value": -0.00443664771643677
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        4
+      ],
+      "value": -0.12496505973263879
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        5
+      ],
+      "value": 0.0024578043295326955
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        6
+      ],
+      "value": -0.24137223175952133
+    },
+    {
+      "kind": "add",
+      "tensor": "ln_f.bias",
+      "index": [
+        7
+      ],
+      "value": -0.0006332733252505161
+    }
+  ]
+}

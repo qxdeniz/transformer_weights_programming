@@ -1,0 +1,92 @@
+{
+  "family": "H1+H2+H3",
+  "hypothesis": "Compose disjoint best singleton hypotheses, with fixed coefficients.",
+  "prediction": "Combine the declared changes; inspect test only after freeze. Calibration can influence metric without changing computation.",
+  "risk": "Autoregressive and normalization interactions can cause additional regressions.",
+  "components": [
+    {
+      "family": "H1",
+      "coefficient": 0.95,
+      "hypothesis": "Tied embedding/readout self-copy paths contribute to repeated-token attractors; modestly shrink the three diagnosed rows.",
+      "evidence": "Diagnostic greedy prompts repeat comma token 15 (30–32 times), token 69 (24 times), and token 165 (32 times). All evidence is open diagnostic output.",
+      "formula": "Scale rows 15,69,165 of model.embed_tokens.weight, preserving lm_head tie.",
+      "prediction": "May reduce repetition on known diagnostic continuations and shift sentence likelihoods; it may only replace one repeated token with another.",
+      "risk": "Those tokens also encode legitimate text. Tied input/output changes can harm grammar preferences and other tokens may become new attractors."
+    },
+    {
+      "family": "H2",
+      "coefficient": 1.25,
+      "hypothesis": "Increase the gain of existing output evidence relative to the nearly uniform per-token penalty via the final RMSNorm scale.",
+      "evidence": "Every diagnostic pair with fewer good-sentence tokens is correct (286/286), every pair with more good-sentence tokens is wrong (0/309); same-length pairs are 261/429. Raw sentence scoring is strongly length dominated.",
+      "formula": "model.norm.weight *= coefficient; logits for each fixed prefix scale uniformly. This is probability calibration, not new computation.",
+      "prediction": "Sentence likelihood ordering can change even though exact greedy argmax ordering should remain unchanged. Any benefit is calibration of this metric, not evidence of improved free generation.",
+      "risk": "Overconfidence in wrong existing predictions can lower likelihood quality and pair accuracy."
+    },
+    {
+      "family": "H3",
+      "coefficient": 1.2,
+      "hypothesis": "Strengthen existing last-layer contextual attention relative to the residual token self-copy path.",
+      "evidence": "Read-only diagnostic activation norms: mean attention output 0.052 and 0.100 versus MLP 0.034 and 0.078 in layers 0 and 1; tied-embedding greedy output often copies a token repeatedly.",
+      "formula": "model.layers.1.self_attn.o_proj.weight *= coefficient; no other architecture or attention rule changes.",
+      "prediction": "Contextual attention can change which token evidence dominates, affecting grammatical likelihood preferences and repetition.",
+      "risk": "Activation norms are not causal proof; strengthening an incorrect attention computation can worsen both measures."
+    }
+  ],
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          15,
+          16
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          69,
+          70
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          165,
+          166
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.95
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.norm.weight",
+      "factor": 1.25
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.layers.1.self_attn.o_proj.weight",
+      "factor": 1.2
+    }
+  ]
+}

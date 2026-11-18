@@ -1,0 +1,7 @@
+{
+  "status": "technical_failed_before_validation",
+  "reason": "Alias assertion used Llama attribute model.embed_tokens on GPT-Neo; expected transformer.wte",
+  "validation_evaluations_used": 0,
+  "model_weights_or_scoring_algorithm_changed": false,
+  "utc": "2026-11-15T10:17:56.314870+00:00"
+}

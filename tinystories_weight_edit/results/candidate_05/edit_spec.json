@@ -1,0 +1,91 @@
+{
+  "family": "H2",
+  "coefficient": 0.9,
+  "hypothesis": "Rebalance FFN updates that can overwrite contextual evidence; reduced gain may preserve useful attention/residual information.",
+  "evidence": "Read-only diagnostic mean FFN output norm is 0.877 in block 0 and 0.222 in block 7; block-7 residual before FFN is 0.173. Many mistakes favour familiar lexical alternatives or distractor agreement.",
+  "formula": "For all eight blocks, scale mlp.c_proj.weight and c_proj.bias together. Do not change activation, width, forward, embeddings or readout.",
+  "prediction": "Modest reduction can help contextual agreement, while an increase is an explicit counter-direction. Norms alone are not causal proof.",
+  "risk": "FFN updates are co-adapted to residual and attention paths. Even modest global rescaling can destroy useful cancellations or lexical knowledge.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.0.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.0.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.1.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.1.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.2.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.2.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.3.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.3.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.4.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.4.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.5.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.5.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.6.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.6.mlp.c_proj.bias",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.7.mlp.c_proj.weight",
+      "factor": 0.9
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.7.mlp.c_proj.bias",
+      "factor": 0.9
+    }
+  ]
+}

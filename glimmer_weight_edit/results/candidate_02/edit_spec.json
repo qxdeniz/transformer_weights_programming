@@ -1,0 +1,56 @@
+{
+  "family": "H1",
+  "coefficient": 0.85,
+  "hypothesis": "Tied embedding/readout self-copy paths contribute to repeated-token attractors; modestly shrink the three diagnosed rows.",
+  "evidence": "Diagnostic greedy prompts repeat comma token 15 (30–32 times), token 69 (24 times), and token 165 (32 times). All evidence is open diagnostic output.",
+  "formula": "Scale rows 15,69,165 of model.embed_tokens.weight, preserving lm_head tie.",
+  "prediction": "May reduce repetition on known diagnostic continuations and shift sentence likelihoods; it may only replace one repeated token with another.",
+  "risk": "Those tokens also encode legitimate text. Tied input/output changes can harm grammar preferences and other tokens may become new attractors.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          15,
+          16
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.85
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          69,
+          70
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.85
+    },
+    {
+      "kind": "scale",
+      "tensor": "model.embed_tokens.weight",
+      "slices": [
+        [
+          165,
+          166
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 0.85
+    }
+  ]
+}

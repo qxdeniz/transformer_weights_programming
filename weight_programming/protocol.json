@@ -1,0 +1,148 @@
+{
+  "benchmark": "CarryBench-10",
+  "version": 1,
+  "operand_range": [
+    0,
+    9999999999
+  ],
+  "created_before_edits": true,
+  "datasets": {
+    "diagnostic": {
+      "size": 1024,
+      "seed": 41001,
+      "sha256": "99b6d0bb2ca3ffc2e75eb582e36cfac32be5f0e409ab50666ce9dd8bf6726e14",
+      "distribution": {
+        "uniform": 256,
+        "single_carry": 128,
+        "chain_short": 128,
+        "chain_medium": 128,
+        "chain_long": 128,
+        "zero": 64,
+        "leading_zeros": 64,
+        "power10": 64,
+        "overflow11": 64
+      }
+    },
+    "validation": {
+      "size": 2048,
+      "seed": 41002,
+      "sha256": "7a80a10e1c891c7ca7b9b8d0ec1517007a36038ead0203b4b5a33357d3b69cc4",
+      "distribution": {
+        "uniform": 512,
+        "single_carry": 256,
+        "chain_short": 256,
+        "chain_medium": 256,
+        "chain_long": 256,
+        "zero": 128,
+        "leading_zeros": 128,
+        "power10": 128,
+        "overflow11": 128
+      }
+    },
+    "test_uniform": {
+      "size": 5000,
+      "seed": 41003,
+      "sha256": "eec3bcc9dabdbf3716b40b0c0b9646c31cff2d0b42f042c3e78838f29f3de5d8",
+      "distribution": {
+        "uniform": 5000
+      }
+    },
+    "test_stress": {
+      "size": 2000,
+      "seed": 41004,
+      "sha256": "e8b882030de65d384c4f52a67b4d65d36a3a6e90a408c6754790b48ebfa75bee",
+      "distribution": {
+        "single_carry": 300,
+        "chain_short": 300,
+        "chain_medium": 400,
+        "chain_long": 400,
+        "zero": 150,
+        "leading_zeros": 150,
+        "power10": 150,
+        "overflow11": 150
+      }
+    },
+    "test_exhaustive_00_99": {
+      "size": 10000,
+      "sha256": "f30e5ff144218de1bd1ea25266cc0cc5915d3cb5d368eef90c9f4195c95060dd",
+      "distribution": "All ordered pairs in [0,99]^2; includes known manual pairs"
+    }
+  },
+  "manual_pairs": [
+    [
+      0,
+      0
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      47,
+      38
+    ],
+    [
+      99,
+      1
+    ],
+    [
+      9999999999,
+      1
+    ],
+    [
+      9999999999,
+      9999999999
+    ]
+  ],
+  "deduplication": "unordered pairs across splits and within random splits; reserve a<100 and b<100 for exhaustive",
+  "mixture_note": "Disjoint source strata; measured labels may overlap. Digit features use exact schoolbook carry arithmetic.",
+  "chain_generation": "one sum>=10 starts run, length-1 sums=9 propagate it; other column sums<=8; verified exactly",
+  "primary_metric": "Exact 12-token target: 11 reversed zero-padded decimal digits followed by EOS",
+  "secondary_metrics": [
+    "upstream_digits_only_exact_match",
+    "numeric_accuracy",
+    "format_validity",
+    "per_digit_accuracy"
+  ],
+  "generation": {
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 1,
+    "seed": 1776,
+    "batch_size": 256,
+    "max_new_tokens": 12,
+    "algorithm": "unmodified upstream greedy generate"
+  },
+  "validation_budget": 12,
+  "selection": [
+    "max validation strict exact match",
+    "min right_to_wrong",
+    "min changed_independent_scalars",
+    "min delta_L2"
+  ],
+  "controls": {
+    "zero_edit": true,
+    "rollback": true,
+    "random_seeds": [
+      71001,
+      71002,
+      71003
+    ],
+    "random_mask_and_norm": "same as selected meaningful edit"
+  },
+  "uncertainty": {
+    "method": "paired multinomial bootstrap of per-example differences",
+    "replicates": 20000,
+    "seed": 61001,
+    "confidence": 0.95
+  },
+  "success": "test_uniform after-minus-before strict EM CI lower bound > 0; stress/exhaustive reported separately",
+  "final_access": "Baseline final evaluations in separate subprocess, sealed_final; no development access before freeze.json",
+  "training_overlap": "No claim that inputs were absent from original training; author training stream is unavailable",
+  "code_sha256": {
+    "benchmark_data.py": "42c789af0a26c556e380c0646b50fb83dc4752f440f1527a50edff07e4478023",
+    "inference.py": "c89cf213f8d337688c2c169e2afc4217497b6b7e4c73b00fab3755e045f5d719",
+    "apply_edit.py": "7f3d0b8966c920f75d8bf754160245001a0140766b2b11910443cce4d11e7c95",
+    "run_experiment.py": "291feffb49e921b0a2f7e277bd28d8b2436dc1ec65d90740107310f6c33e009b"
+  }
+}

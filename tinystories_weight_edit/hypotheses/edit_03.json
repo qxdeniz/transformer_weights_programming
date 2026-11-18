@@ -1,0 +1,91 @@
+{
+  "family": "H1",
+  "coefficient": 1.2,
+  "hypothesis": "Change the gain of contextual attention relative to the residual stream throughout the existing blocks.",
+  "evidence": "Diagnostic distractor-agreement accuracy is 57/128; correct main-subject agreement often loses to a nearby plural distractor. Existing attention branches mix context, with layer-output norms 0.13–0.69.",
+  "formula": "For all eight blocks, scale attention.out_proj.weight and out_proj.bias together.",
+  "prediction": "A stronger contextual branch may improve agreement decisions; a weaker counter-direction tests that interpretation. Observe all regressions.",
+  "risk": "All attention computations are rescaled, including useful ones. Stronger incorrect attention may worsen grammar and story generation.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.0.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.0.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.1.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.1.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.2.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.2.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.3.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.3.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.4.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.4.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.5.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.5.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.6.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.6.attn.attention.out_proj.bias",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.7.attn.attention.out_proj.weight",
+      "factor": 1.2
+    },
+    {
+      "kind": "scale",
+      "tensor": "transformer.h.7.attn.attention.out_proj.bias",
+      "factor": 1.2
+    }
+  ]
+}

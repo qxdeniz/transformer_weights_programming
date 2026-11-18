@@ -1,0 +1,73 @@
+{
+  "changed_scalars": 131584,
+  "total_scalars": 3745984,
+  "fraction": 0.035126685004527515,
+  "delta_l2": 1.3531212368735428,
+  "relative_l2": 0.007286179854265648,
+  "tensors": {
+    "transformer.h.0.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.594994140212324
+    },
+    "transformer.h.0.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.024598250955349288
+    },
+    "transformer.h.1.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.4878574674362476
+    },
+    "transformer.h.1.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.019986202882979528
+    },
+    "transformer.h.2.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.4574212265641926
+    },
+    "transformer.h.2.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.01518330744122368
+    },
+    "transformer.h.3.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.4513504222919176
+    },
+    "transformer.h.3.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.014550188495563414
+    },
+    "transformer.h.4.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.4249105652700645
+    },
+    "transformer.h.4.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.014002666988479191
+    },
+    "transformer.h.5.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.4099868567792306
+    },
+    "transformer.h.5.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.01616149466650688
+    },
+    "transformer.h.6.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.43639813255765075
+    },
+    "transformer.h.6.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.01378114887172076
+    },
+    "transformer.h.7.mlp.c_proj.weight": {
+      "changed": 16384,
+      "delta_l2": 0.5334164263543957
+    },
+    "transformer.h.7.mlp.c_proj.bias": {
+      "changed": 64,
+      "delta_l2": 0.015943246413593418
+    }
+  }
+}

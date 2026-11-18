@@ -1,0 +1,26 @@
+{
+  "family": "H2",
+  "coefficient": 1.2,
+  "hypothesis": "A small EOS readout margin can be corrected locally. The EOS embedding is tied, but EOS never appears in a correctly formatted input prefix.",
+  "evidence": "Diagnostic 00015 and 00141 generate all 11 sum digits correctly but digit 5 outranks EOS on final step by 1.55 and 1.05 logits.",
+  "formula": "token_emb.weight[112,:] *= factor; preserve alias with lm_head.weight.",
+  "prediction": "Correct missing termination on already correct sums; digit-only accuracy need not improve.",
+  "risk": "EOS may overtake a digit early. Such cases remain errors under strict EM.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "token_emb.weight",
+      "slices": [
+        [
+          112,
+          113
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 1.2
+    }
+  ]
+}

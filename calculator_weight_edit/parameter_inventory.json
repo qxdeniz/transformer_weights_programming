@@ -1,0 +1,327 @@
+{
+  "parameters": [
+    {
+      "name": "embedding.token_embedding.weight",
+      "shape": [
+        36,
+        64
+      ],
+      "scalars": 2304,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.q_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.q_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.k_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.k_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.v_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.v_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.out_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.attention.out_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.norm1.weight",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.norm1.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.feed_forward.linear1.weight",
+      "shape": [
+        256,
+        64
+      ],
+      "scalars": 16384,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.feed_forward.linear1.bias",
+      "shape": [
+        256
+      ],
+      "scalars": 256,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.feed_forward.linear2.weight",
+      "shape": [
+        64,
+        256
+      ],
+      "scalars": 16384,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.feed_forward.linear2.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.norm2.weight",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.0.norm2.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.q_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.q_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.k_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.k_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.v_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.v_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.out_proj.weight",
+      "shape": [
+        64,
+        64
+      ],
+      "scalars": 4096,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.attention.out_proj.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.norm1.weight",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.norm1.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.feed_forward.linear1.weight",
+      "shape": [
+        256,
+        64
+      ],
+      "scalars": 16384,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.feed_forward.linear1.bias",
+      "shape": [
+        256
+      ],
+      "scalars": 256,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.feed_forward.linear2.weight",
+      "shape": [
+        64,
+        256
+      ],
+      "scalars": 16384,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.feed_forward.linear2.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.norm2.weight",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "layers.1.norm2.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "norm.weight",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "norm.bias",
+      "shape": [
+        64
+      ],
+      "scalars": 64,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "output_proj.weight",
+      "shape": [
+        36,
+        64
+      ],
+      "scalars": 2304,
+      "dtype": "torch.float32"
+    },
+    {
+      "name": "output_proj.bias",
+      "shape": [
+        36
+      ],
+      "scalars": 36,
+      "dtype": "torch.float32"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "embedding.pos_encoding.pe",
+      "shape": [
+        1,
+        16,
+        64
+      ],
+      "dtype": "torch.float32"
+    }
+  ],
+  "independent_scalars": 104740,
+  "shared_weight_groups": []
+}

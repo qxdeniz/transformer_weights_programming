@@ -1,0 +1,270 @@
+[
+  {
+    "id": "candidate_01",
+    "status": "complete",
+    "spec_sha256": "7bb2781374a3db394f24cc5d83b6bb9595462e4973735e0c8160b23fa8d902c5",
+    "validation_correct": 1052,
+    "wrong_to_right": 0,
+    "right_to_wrong": 0,
+    "changed_scalars": 48,
+    "total_scalars": 11856,
+    "fraction": 0.004048582995951417,
+    "delta_l2": 0.02007615900056283,
+    "relative_l2": 0.001910479457608377,
+    "tensors": {
+      "model.embed_tokens.weight": {
+        "changed": 48,
+        "delta_l2": 0.02007615900056283
+      }
+    },
+    "preparation_seconds": 0.1329458329710178,
+    "checkpoint_sha256": "a11fb4c8c05cd47775467e718ac7852bc333765df707cc31208f0d57a5794d98"
+  },
+  {
+    "id": "candidate_02",
+    "status": "complete",
+    "spec_sha256": "04256b68ce319ed507b36c266367510770efe10b0ba9c004b6b5bb49725da161",
+    "validation_correct": 1051,
+    "wrong_to_right": 0,
+    "right_to_wrong": 1,
+    "changed_scalars": 48,
+    "total_scalars": 11856,
+    "fraction": 0.004048582995951417,
+    "delta_l2": 0.060228452841441474,
+    "relative_l2": 0.005731436073697314,
+    "tensors": {
+      "model.embed_tokens.weight": {
+        "changed": 48,
+        "delta_l2": 0.060228452841441474
+      }
+    },
+    "preparation_seconds": 0.022728583018761128,
+    "checkpoint_sha256": "9fb9677d522f975bc3664e97988b2abb472ce3f8c652a1609e5360f8c4223bd1"
+  },
+  {
+    "id": "candidate_03",
+    "status": "complete",
+    "spec_sha256": "77182e9f6193cb8f47a64aa4c0873fb35ffadf8e9b8d625b59012f0c02f4b5dd",
+    "validation_correct": 1051,
+    "wrong_to_right": 0,
+    "right_to_wrong": 1,
+    "changed_scalars": 48,
+    "total_scalars": 11856,
+    "fraction": 0.004048582995951417,
+    "delta_l2": 0.12045692055679275,
+    "relative_l2": 0.011462873562819716,
+    "tensors": {
+      "model.embed_tokens.weight": {
+        "changed": 48,
+        "delta_l2": 0.12045692055679275
+      }
+    },
+    "preparation_seconds": 0.018140917003620416,
+    "checkpoint_sha256": "132765e4b656e1b2a25ba170038b4b84995f36a766a61c71d4aa1cbea2fbedae"
+  },
+  {
+    "id": "candidate_04",
+    "status": "complete",
+    "spec_sha256": "9d1738862780a515e3262edede402079ad165a5287373e5a1c847a7e51b511fa",
+    "validation_correct": 1052,
+    "wrong_to_right": 0,
+    "right_to_wrong": 0,
+    "changed_scalars": 16,
+    "total_scalars": 11856,
+    "fraction": 0.001349527665317139,
+    "delta_l2": 1.0967919777408952,
+    "relative_l2": 0.10437248194163538,
+    "tensors": {
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 1.0967919777408952
+      }
+    },
+    "preparation_seconds": 0.018479666963685304,
+    "checkpoint_sha256": "496be41038b6f721b37e36ce8303d9ccea6643849e4ff54e3743995d40494735"
+  },
+  {
+    "id": "candidate_05",
+    "status": "complete",
+    "spec_sha256": "557a6294076eb931afa57684831ebedbb38901d5af610dda7c19d88c146ca3ff",
+    "validation_correct": 1049,
+    "wrong_to_right": 1,
+    "right_to_wrong": 4,
+    "changed_scalars": 16,
+    "total_scalars": 11856,
+    "fraction": 0.001349527665317139,
+    "delta_l2": 4.38716779161008,
+    "relative_l2": 0.41748991640867117,
+    "tensors": {
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 4.38716779161008
+      }
+    },
+    "preparation_seconds": 0.018706917006056756,
+    "checkpoint_sha256": "c39e6f15d218a8fda933f7e5a97586a8e902227174a6b6bae8d03fb1db982c41"
+  },
+  {
+    "id": "candidate_06",
+    "status": "complete",
+    "spec_sha256": "b45d84d63e354c17303fd81eef05082d182be8f0dca5df4599d126864bc2ee42",
+    "validation_correct": 1049,
+    "wrong_to_right": 9,
+    "right_to_wrong": 12,
+    "changed_scalars": 16,
+    "total_scalars": 11856,
+    "fraction": 0.001349527665317139,
+    "delta_l2": 13.161503374830241,
+    "relative_l2": 1.2524697492260135,
+    "tensors": {
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 13.161503374830241
+      }
+    },
+    "preparation_seconds": 0.018246458959765732,
+    "checkpoint_sha256": "342d22a38249cfdf335096ffc1c1277d6e0b906847433cf2d0180f3b7252bb3b"
+  },
+  {
+    "id": "candidate_07",
+    "status": "complete",
+    "spec_sha256": "52d0a8412b31e1b018c4c83e643eb0e5b2e9bd797560fe7284ccf14ec38ce023",
+    "validation_correct": 1047,
+    "wrong_to_right": 2,
+    "right_to_wrong": 7,
+    "changed_scalars": 256,
+    "total_scalars": 11856,
+    "fraction": 0.021592442645074223,
+    "delta_l2": 0.08968618314806205,
+    "relative_l2": 0.008534680888454388,
+    "tensors": {
+      "model.layers.1.self_attn.o_proj.weight": {
+        "changed": 256,
+        "delta_l2": 0.08968618314806205
+      }
+    },
+    "preparation_seconds": 0.08473266701912507,
+    "checkpoint_sha256": "9cc8603dc15d5d6d9f42afbb06392981584b824b3becc7538a2925cf956d586b"
+  },
+  {
+    "id": "candidate_08",
+    "status": "complete",
+    "spec_sha256": "ba1ed3811f9bc625d173e953061873a51fa15fc1d887f8d01209a79fdbfc538e",
+    "validation_correct": 1040,
+    "wrong_to_right": 3,
+    "right_to_wrong": 15,
+    "changed_scalars": 256,
+    "total_scalars": 11856,
+    "fraction": 0.021592442645074223,
+    "delta_l2": 0.22421540400217346,
+    "relative_l2": 0.021336697094972525,
+    "tensors": {
+      "model.layers.1.self_attn.o_proj.weight": {
+        "changed": 256,
+        "delta_l2": 0.22421540400217344
+      }
+    },
+    "preparation_seconds": 0.01820929197128862,
+    "checkpoint_sha256": "21ef044b3cca54413a48cf3bf77bb05bae8d8eb0fad5afc296e468196fa6056f"
+  },
+  {
+    "id": "candidate_09",
+    "status": "complete",
+    "spec_sha256": "37a1f7c459ff3d9a07afa27f4e30a7d6689d2b2a16aa190b9d0b06ca455a40a3",
+    "validation_correct": 1045,
+    "wrong_to_right": 9,
+    "right_to_wrong": 16,
+    "changed_scalars": 256,
+    "total_scalars": 11856,
+    "fraction": 0.021592442645074223,
+    "delta_l2": 0.4484308093272207,
+    "relative_l2": 0.042673394315831836,
+    "tensors": {
+      "model.layers.1.self_attn.o_proj.weight": {
+        "changed": 256,
+        "delta_l2": 0.44843080932722057
+      }
+    },
+    "preparation_seconds": 0.08360245800577104,
+    "checkpoint_sha256": "5665f5f115f49b3a4f09f4d93032e9f4ab6da3fcc34bf70f9ba2fb4576c4659f"
+  },
+  {
+    "id": "candidate_10",
+    "status": "complete",
+    "spec_sha256": "d27d4705185c3a9e1262a55a14dabbb7d380e2203144b1dfff05942947dd96c3",
+    "validation_correct": 1052,
+    "wrong_to_right": 0,
+    "right_to_wrong": 0,
+    "changed_scalars": 64,
+    "total_scalars": 11856,
+    "fraction": 0.005398110661268556,
+    "delta_l2": 1.096975703740516,
+    "relative_l2": 0.10438996560213509,
+    "tensors": {
+      "model.embed_tokens.weight": {
+        "changed": 48,
+        "delta_l2": 0.02007615900056283
+      },
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 1.0967919777408952
+      }
+    },
+    "preparation_seconds": 0.018262292025610805,
+    "checkpoint_sha256": "e9270a0bb0cfbdaef1d2f1846cb041011811a3c1500fecbf8eb8117e5305e91c"
+  },
+  {
+    "id": "candidate_11",
+    "status": "complete",
+    "spec_sha256": "7f57c8286602503dfaff08eafa205754b478ad4ba7fc9957c71600e399fe35f1",
+    "validation_correct": 1047,
+    "wrong_to_right": 1,
+    "right_to_wrong": 6,
+    "changed_scalars": 272,
+    "total_scalars": 11856,
+    "fraction": 0.022941970310391364,
+    "delta_l2": 1.1004527495010643,
+    "relative_l2": 0.10472084684782085,
+    "tensors": {
+      "model.layers.1.self_attn.o_proj.weight": {
+        "changed": 256,
+        "delta_l2": 0.08968618314806205
+      },
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 1.0967919777408952
+      }
+    },
+    "preparation_seconds": 0.018891124986112118,
+    "checkpoint_sha256": "1b81a7cd2c47e809da93e6512b8d048a2248444fc1fc995d3048100e0d673723"
+  },
+  {
+    "id": "candidate_12",
+    "status": "complete",
+    "spec_sha256": "0a262c62c7508e0931f455eeceee2bfda431ab9ff7c19d089bd096fb13006959",
+    "validation_correct": 1047,
+    "wrong_to_right": 1,
+    "right_to_wrong": 6,
+    "changed_scalars": 320,
+    "total_scalars": 11856,
+    "fraction": 0.02699055330634278,
+    "delta_l2": 1.100635864418686,
+    "relative_l2": 0.10473827235677843,
+    "tensors": {
+      "model.embed_tokens.weight": {
+        "changed": 48,
+        "delta_l2": 0.02007615900056283
+      },
+      "model.layers.1.self_attn.o_proj.weight": {
+        "changed": 256,
+        "delta_l2": 0.08968618314806205
+      },
+      "model.norm.weight": {
+        "changed": 16,
+        "delta_l2": 1.0967919777408952
+      }
+    },
+    "preparation_seconds": 0.02018854202469811,
+    "checkpoint_sha256": "3ff798531cb8bb5ff882478b0d034e2d602a04324c8f98de02895947a640e9e3"
+  }
+]

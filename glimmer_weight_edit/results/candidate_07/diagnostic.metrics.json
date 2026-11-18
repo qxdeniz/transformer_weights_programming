@@ -1,0 +1,61 @@
+{
+  "n": 1024,
+  "correct": 545,
+  "accuracy": 0.5322265625,
+  "macro_accuracy": 0.5322265625,
+  "mean_margin": 0.9655718603171408,
+  "ties": 0,
+  "by_paradigm": {
+    "anaphor_gender_agreement": {
+      "n": 128,
+      "correct": 44,
+      "accuracy": 0.34375,
+      "mean_margin": -0.6185875236988068
+    },
+    "wh_vs_that_no_gap": {
+      "n": 128,
+      "correct": 128,
+      "accuracy": 1.0,
+      "mean_margin": 0.7173270992934704
+    },
+    "npi_present_1": {
+      "n": 128,
+      "correct": 5,
+      "accuracy": 0.0390625,
+      "mean_margin": -5.938511084765196
+    },
+    "principle_A_domain_1": {
+      "n": 128,
+      "correct": 128,
+      "accuracy": 1.0,
+      "mean_margin": 18.23411076143384
+    },
+    "irregular_plural_subject_verb_agreement_1": {
+      "n": 128,
+      "correct": 63,
+      "accuracy": 0.4921875,
+      "mean_margin": -0.07047657668590546
+    },
+    "determiner_noun_agreement_1": {
+      "n": 128,
+      "correct": 64,
+      "accuracy": 0.5,
+      "mean_margin": -0.03848543390631676
+    },
+    "irregular_past_participle_adjectives": {
+      "n": 128,
+      "correct": 45,
+      "accuracy": 0.3515625,
+      "mean_margin": -3.9537264853715897
+    },
+    "regular_plural_subject_verb_agreement_1": {
+      "n": 128,
+      "correct": 68,
+      "accuracy": 0.53125,
+      "mean_margin": -0.6070758737623692
+    }
+  },
+  "inference_seconds": 0.40081562503473833,
+  "checkpoint_sha256": "9cc8603dc15d5d6d9f42afbb06392981584b824b3becc7538a2925cf956d586b",
+  "dataset_sha256": "402faaeb55a46772739efe8a74779ad0199ad58bf63e00343a5b9364062dda65"
+}

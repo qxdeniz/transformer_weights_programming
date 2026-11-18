@@ -1,0 +1,45 @@
+{
+  "H1": {
+    "observation": "Diagnostic greedy prompts repeat comma token 15 (30–32 times), token 69 (24 times), and token 165 (32 times). All evidence is open diagnostic output.",
+    "hypothesis": "Tied embedding/readout self-copy paths contribute to repeated-token attractors; modestly shrink the three diagnosed rows.",
+    "formula": "Scale rows 15,69,165 of model.embed_tokens.weight, preserving lm_head tie.",
+    "coefficients": [
+      0.95,
+      0.85,
+      0.7
+    ],
+    "prediction": "May reduce repetition on known diagnostic continuations and shift sentence likelihoods; it may only replace one repeated token with another.",
+    "risk": "Those tokens also encode legitimate text. Tied input/output changes can harm grammar preferences and other tokens may become new attractors."
+  },
+  "H2": {
+    "observation": "Every diagnostic pair with fewer good-sentence tokens is correct (286/286), every pair with more good-sentence tokens is wrong (0/309); same-length pairs are 261/429. Raw sentence scoring is strongly length dominated.",
+    "hypothesis": "Increase the gain of existing output evidence relative to the nearly uniform per-token penalty via the final RMSNorm scale.",
+    "formula": "model.norm.weight *= coefficient; logits for each fixed prefix scale uniformly. This is probability calibration, not new computation.",
+    "coefficients": [
+      1.25,
+      2.0,
+      4.0
+    ],
+    "prediction": "Sentence likelihood ordering can change even though exact greedy argmax ordering should remain unchanged. Any benefit is calibration of this metric, not evidence of improved free generation.",
+    "risk": "Overconfidence in wrong existing predictions can lower likelihood quality and pair accuracy."
+  },
+  "H3": {
+    "observation": "Read-only diagnostic activation norms: mean attention output 0.052 and 0.100 versus MLP 0.034 and 0.078 in layers 0 and 1; tied-embedding greedy output often copies a token repeatedly.",
+    "hypothesis": "Strengthen existing last-layer contextual attention relative to the residual token self-copy path.",
+    "formula": "model.layers.1.self_attn.o_proj.weight *= coefficient; no other architecture or attention rule changes.",
+    "coefficients": [
+      1.2,
+      1.5,
+      2.0
+    ],
+    "prediction": "Contextual attention can change which token evidence dominates, affecting grammatical likelihood preferences and repetition.",
+    "risk": "Activation norms are not causal proof; strengthening an incorrect attention computation can worsen both measures."
+  },
+  "combinations": {
+    "rule": "Choose singleton winner of each family by registered validation rank; try H1+H2, H2+H3 and H1+H2+H3. No new coefficient tuning.",
+    "count": 3
+  },
+  "budget": 12,
+  "final_test_access": false,
+  "method": "Explicit formulas reasoned from diagnostic observations; no gradients, optimizer, regression, evolutionary search, or stochastic candidate search."
+}

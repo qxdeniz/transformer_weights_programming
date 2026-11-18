@@ -1,0 +1,10 @@
+{
+  "shapes_dtypes_keys_unchanged": true,
+  "buffers_unchanged": true,
+  "aliases_preserved": true,
+  "finite": true,
+  "outside_mask_unchanged": true,
+  "rollback_equal": true,
+  "fresh_process_predictions_equal": true,
+  "source_and_protocol_hashes_verified": true
+}

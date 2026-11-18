@@ -1,0 +1,32 @@
+{
+  "status": "descriptive secondary analysis; not a new selection criterion",
+  "length_baseline": "prefer fewer BPE tokens; equal lengths broken by fixed SHA256(id) bit",
+  "length_only_correct": 2397,
+  "n": 4928,
+  "groups": {
+    "same_token_length": {
+      "n": 1963,
+      "before_correct": 1178,
+      "after_correct": 1174,
+      "length_only_correct": 954,
+      "wrong_to_right": 0,
+      "right_to_wrong": 4
+    },
+    "good_shorter": {
+      "n": 1443,
+      "before_correct": 1443,
+      "after_correct": 1443,
+      "length_only_correct": 1443,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0
+    },
+    "good_longer": {
+      "n": 1522,
+      "before_correct": 0,
+      "after_correct": 0,
+      "length_only_correct": 0,
+      "wrong_to_right": 0,
+      "right_to_wrong": 0
+    }
+  }
+}

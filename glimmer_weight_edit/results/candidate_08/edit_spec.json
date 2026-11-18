@@ -1,0 +1,16 @@
+{
+  "family": "H3",
+  "coefficient": 1.5,
+  "hypothesis": "Strengthen existing last-layer contextual attention relative to the residual token self-copy path.",
+  "evidence": "Read-only diagnostic activation norms: mean attention output 0.052 and 0.100 versus MLP 0.034 and 0.078 in layers 0 and 1; tied-embedding greedy output often copies a token repeatedly.",
+  "formula": "model.layers.1.self_attn.o_proj.weight *= coefficient; no other architecture or attention rule changes.",
+  "prediction": "Contextual attention can change which token evidence dominates, affecting grammatical likelihood preferences and repetition.",
+  "risk": "Activation norms are not causal proof; strengthening an incorrect attention computation can worsen both measures.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "model.layers.1.self_attn.o_proj.weight",
+      "factor": 1.5
+    }
+  ]
+}

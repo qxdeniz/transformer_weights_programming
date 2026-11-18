@@ -1,0 +1,164 @@
+{
+  "benchmark": "BLiMP eight-paradigm editing study v1",
+  "paradigms": [
+    "anaphor_gender_agreement",
+    "determiner_noun_agreement_1",
+    "regular_plural_subject_verb_agreement_1",
+    "irregular_plural_subject_verb_agreement_1",
+    "principle_A_domain_1",
+    "npi_present_1",
+    "wh_vs_that_no_gap",
+    "irregular_past_participle_adjectives"
+  ],
+  "datasets": {
+    "diagnostic": {
+      "n": 1024,
+      "sha256": "402faaeb55a46772739efe8a74779ad0199ad58bf63e00343a5b9364062dda65",
+      "by_paradigm": {
+        "anaphor_gender_agreement": 128,
+        "wh_vs_that_no_gap": 128,
+        "npi_present_1": 128,
+        "principle_A_domain_1": 128,
+        "irregular_plural_subject_verb_agreement_1": 128,
+        "determiner_noun_agreement_1": 128,
+        "irregular_past_participle_adjectives": 128,
+        "regular_plural_subject_verb_agreement_1": 128
+      }
+    },
+    "validation": {
+      "n": 2048,
+      "sha256": "0e7e22ae3ef72f9015b80fd1911bd54bd5d80e24735830c0d5ad19e2d5e8ed76",
+      "by_paradigm": {
+        "anaphor_gender_agreement": 256,
+        "principle_A_domain_1": 256,
+        "regular_plural_subject_verb_agreement_1": 256,
+        "wh_vs_that_no_gap": 256,
+        "irregular_plural_subject_verb_agreement_1": 256,
+        "npi_present_1": 256,
+        "determiner_noun_agreement_1": 256,
+        "irregular_past_participle_adjectives": 256
+      }
+    },
+    "test": {
+      "n": 4928,
+      "sha256": "5f47799e1de3451866f836d27fad530303e7cc4230368aa1eabece37a983ba07",
+      "by_paradigm": {
+        "determiner_noun_agreement_1": 616,
+        "npi_present_1": 616,
+        "wh_vs_that_no_gap": 616,
+        "irregular_past_participle_adjectives": 616,
+        "regular_plural_subject_verb_agreement_1": 616,
+        "principle_A_domain_1": 616,
+        "anaphor_gender_agreement": 616,
+        "irregular_plural_subject_verb_agreement_1": 616
+      }
+    }
+  },
+  "deduplication": {
+    "anaphor_gender_agreement": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "determiner_noun_agreement_1": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "regular_plural_subject_verb_agreement_1": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "irregular_plural_subject_verb_agreement_1": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "principle_A_domain_1": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "npi_present_1": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "wh_vs_that_no_gap": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "irregular_past_participle_adjectives": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    }
+  },
+  "sampling": "Named paradigms selected for linguistic coverage before running this model; shuffle/dedup before any model outputs. Remove every exact shared sentence globally, even within a split.",
+  "seeds": {
+    "dedup_shuffle_base": 92101,
+    "diagnostic_base": 92201,
+    "validation_base": 92301,
+    "test_base": 92401,
+    "split_order": [
+      92501,
+      92502,
+      92503
+    ]
+  },
+  "model": "Glint-Research/Glimmer-1-Base",
+  "independent_parameters": 11856,
+  "primary_metric": "pair accuracy: raw summed log P(sentence_good | BOS) > raw summed log P(sentence_bad | BOS); exact ties counted wrong",
+  "secondary_metrics": [
+    "macro accuracy over paradigms",
+    "raw log-likelihood margin",
+    "diagnostic greedy generations (illustrative only)"
+  ],
+  "scoring": "Official Transformers Llama forward, eager attention, causal likelihood; teacher-forced sentence scoring is standard for BLiMP, unlike the separate addition task. No EOS, length normalization, or response repair.",
+  "inference": {
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "seed": 91101,
+    "score_batch_size": 64,
+    "bos_id": 1,
+    "context_limit": 512,
+    "generation_tokens": 32,
+    "greedy": true
+  },
+  "validation_budget": 12,
+  "selection": [
+    "max validation correct",
+    "min right_to_wrong",
+    "min changed_scalars",
+    "min delta_l2"
+  ],
+  "controls": {
+    "zero_edit": true,
+    "rollback": true,
+    "random_seeds": [
+      93101,
+      93102,
+      93103
+    ],
+    "random_match": "same actual nonzero mask and L2 norm"
+  },
+  "statistics": {
+    "method": "paired bootstrap stratified by paradigm, fixed observed test weights",
+    "replicates": 20000,
+    "seed": 94101,
+    "confidence": 0.95
+  },
+  "success": "test micro accuracy difference positive with stratified 95% paired interval lower bound > 0; per-paradigm effects and regressions reported separately",
+  "scope": "8 of 67 BLiMP paradigms; not a reproduction of model-card full BLiMP 52.43%; no claim of general intelligence or improved free-form generation",
+  "contamination": "Original FineWeb-Edu training sample unavailable. BLiMP held out from editing, not certified absent from original training. Templates and vocabulary are shared across splits.",
+  "sealing": "Baseline test evaluated in separate process, outcomes sealed until checkpoint/spec/code/protocol freeze; development then closes",
+  "code_sha256": {
+    "language_model.py": "fe99d12a943af821cc59042742c49dda5d4b107ac1205457bc6075cd6b5f7f27",
+    "benchmark.py": "42e8ecdac7b19b328ccc363e808ffc971ceffa9d086fe5f353299e52d6bf43d1",
+    "edit_weights.py": "48031fa7c28c816266d699bec4dbef7bb35b2026a549eac4ed49571c80d16184",
+    "experiment.py": "6ccb5f0a4eb787e6df45257822774cc93694a56b1b7fce2be364d5eededd4e1e"
+  }
+}

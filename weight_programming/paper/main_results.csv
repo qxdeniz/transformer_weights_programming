@@ -1,0 +1,4 @@
+set,model,n,before_correct,after_correct,before_em,after_em,delta_pp,wrong_to_right,right_to_wrong,before_seconds,after_seconds,before_format,after_format,paired_bootstrap_95ci_pp,before_digit_only,after_digit_only,before_numeric,after_numeric
+test_uniform,selected,5000,4943,4943,0.9886,0.9886,0.0,9,9,1.0294552919804119,0.9651969589758664,1.0,1.0,"[-0.16, 0.16]",0.9886,0.9886,0.9886,0.9886
+test_stress,selected,2000,1966,1975,0.983,0.9875,0.45000000000000595,15,6,0.38975824997760355,0.3835477500106208,0.9985,0.999,"[0.0, 0.9]",0.9845,0.988,0.9845,0.9885
+test_exhaustive_00_99,selected,10000,9997,9993,0.9997,0.9993,-0.0400000000000067,0,4,1.9155855419812724,1.958209624979645,1.0,1.0,,0.9997,0.9993,0.9997,0.9993

@@ -1,0 +1,6 @@
+{
+  "open_predictions_bitwise_equal": true,
+  "sealed_test_prediction_file_hash_equal": true,
+  "final_outcomes_not_opened": true,
+  "validation_evaluations_used": 0
+}

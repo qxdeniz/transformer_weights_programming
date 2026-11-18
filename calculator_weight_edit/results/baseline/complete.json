@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "reference_agreement": 100,
+  "single_batch_token_equality": 100,
+  "zero_reload_equal": true,
+  "final_metrics_sealed": true
+}

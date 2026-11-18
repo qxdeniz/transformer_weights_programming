@@ -1,0 +1,17 @@
+{
+  "changed_scalars": 64,
+  "total_scalars": 11856,
+  "fraction": 0.005398110661268556,
+  "delta_l2": 1.096975703740516,
+  "relative_l2": 0.10438996560213509,
+  "tensors": {
+    "model.embed_tokens.weight": {
+      "changed": 48,
+      "delta_l2": 0.02007615900056283
+    },
+    "model.norm.weight": {
+      "changed": 16,
+      "delta_l2": 1.0967919777408952
+    }
+  }
+}

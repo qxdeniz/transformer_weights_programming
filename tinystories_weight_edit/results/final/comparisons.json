@@ -1,0 +1,710 @@
+[
+  {
+    "model": "selected",
+    "n": 4917,
+    "before_correct": 3248,
+    "after_correct": 3247,
+    "before_accuracy": 0.6605653853976001,
+    "after_accuracy": 0.660362009355298,
+    "delta_pp": -0.02033760423022168,
+    "wrong_to_right": 181,
+    "right_to_wrong": 182,
+    "exact_two_sided_p": 1.0,
+    "by_paradigm": {
+      "anaphor_number_agreement": {
+        "n": 616,
+        "before_correct": 439,
+        "after_correct": 433,
+        "delta_pp": -0.974025974025974,
+        "wrong_to_right": 23,
+        "right_to_wrong": 29
+      },
+      "determiner_noun_agreement_2": {
+        "n": 616,
+        "before_correct": 415,
+        "after_correct": 400,
+        "delta_pp": -2.435064935064935,
+        "wrong_to_right": 15,
+        "right_to_wrong": 30
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "n": 616,
+        "before_correct": 341,
+        "after_correct": 341,
+        "delta_pp": 0.0,
+        "wrong_to_right": 25,
+        "right_to_wrong": 25
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "n": 615,
+        "before_correct": 365,
+        "after_correct": 374,
+        "delta_pp": 1.4634146341463414,
+        "wrong_to_right": 32,
+        "right_to_wrong": 23
+      },
+      "irregular_past_participle_verbs": {
+        "n": 616,
+        "before_correct": 592,
+        "after_correct": 588,
+        "delta_pp": -0.6493506493506493,
+        "wrong_to_right": 7,
+        "right_to_wrong": 11
+      },
+      "distractor_agreement_relational_noun": {
+        "n": 616,
+        "before_correct": 244,
+        "after_correct": 241,
+        "delta_pp": -0.487012987012987,
+        "wrong_to_right": 34,
+        "right_to_wrong": 37
+      },
+      "passive_1": {
+        "n": 614,
+        "before_correct": 425,
+        "after_correct": 449,
+        "delta_pp": 3.9087947882736156,
+        "wrong_to_right": 30,
+        "right_to_wrong": 6
+      },
+      "intransitive": {
+        "n": 608,
+        "before_correct": 427,
+        "after_correct": 421,
+        "delta_pp": -0.9868421052631579,
+        "wrong_to_right": 15,
+        "right_to_wrong": 21
+      }
+    },
+    "before_macro_accuracy": 0.6606323623799589,
+    "after_macro_accuracy": 0.6604322533445868,
+    "paired_stratified_95ci_pp": [
+      -0.772828960748424,
+      0.7524913565182021
+    ],
+    "paired_macro_95ci_pp": [
+      -0.7729576071848886,
+      0.7511624939560553
+    ],
+    "same_token_length": {
+      "n": 4106,
+      "before_correct": 2694,
+      "after_correct": 2694,
+      "before_accuracy": 0.6561130053580126,
+      "after_accuracy": 0.6561130053580126,
+      "delta_pp": 0.0,
+      "wrong_to_right": 164,
+      "right_to_wrong": 164,
+      "exact_two_sided_p": 1.0,
+      "by_paradigm": {
+        "anaphor_number_agreement": {
+          "n": 616,
+          "before_correct": 439,
+          "after_correct": 433,
+          "delta_pp": -0.974025974025974,
+          "wrong_to_right": 23,
+          "right_to_wrong": 29
+        },
+        "determiner_noun_agreement_2": {
+          "n": 616,
+          "before_correct": 415,
+          "after_correct": 400,
+          "delta_pp": -2.435064935064935,
+          "wrong_to_right": 15,
+          "right_to_wrong": 30
+        },
+        "regular_plural_subject_verb_agreement_2": {
+          "n": 567,
+          "before_correct": 319,
+          "after_correct": 320,
+          "delta_pp": 0.1763668430335097,
+          "wrong_to_right": 25,
+          "right_to_wrong": 24
+        },
+        "irregular_plural_subject_verb_agreement_2": {
+          "n": 491,
+          "before_correct": 293,
+          "after_correct": 301,
+          "delta_pp": 1.629327902240326,
+          "wrong_to_right": 31,
+          "right_to_wrong": 23
+        },
+        "irregular_past_participle_verbs": {
+          "n": 580,
+          "before_correct": 557,
+          "after_correct": 552,
+          "delta_pp": -0.8620689655172413,
+          "wrong_to_right": 6,
+          "right_to_wrong": 11
+        },
+        "distractor_agreement_relational_noun": {
+          "n": 562,
+          "before_correct": 223,
+          "after_correct": 221,
+          "delta_pp": -0.35587188612099646,
+          "wrong_to_right": 34,
+          "right_to_wrong": 36
+        },
+        "passive_1": {
+          "n": 397,
+          "before_correct": 265,
+          "after_correct": 285,
+          "delta_pp": 5.037783375314861,
+          "wrong_to_right": 24,
+          "right_to_wrong": 4
+        },
+        "intransitive": {
+          "n": 277,
+          "before_correct": 183,
+          "after_correct": 182,
+          "delta_pp": -0.36101083032490977,
+          "wrong_to_right": 6,
+          "right_to_wrong": 7
+        }
+      },
+      "before_macro_accuracy": 0.6538766633963717,
+      "after_macro_accuracy": 0.65619595780829,
+      "paired_stratified_95ci_pp": [
+        -0.852411105698977,
+        0.8767657087189479
+      ],
+      "paired_macro_95ci_pp": [
+        -0.6204870267719093,
+        1.1036700890636997
+      ]
+    },
+    "before_seconds": 25.60145120800007,
+    "after_seconds": 25.70156037498964
+  },
+  {
+    "model": "random_103101",
+    "n": 4917,
+    "before_correct": 3248,
+    "after_correct": 2854,
+    "before_accuracy": 0.6605653853976001,
+    "after_accuracy": 0.5804352247305268,
+    "delta_pp": -8.013016066707342,
+    "wrong_to_right": 437,
+    "right_to_wrong": 831,
+    "exact_two_sided_p": 9.234462258451571e-29,
+    "by_paradigm": {
+      "anaphor_number_agreement": {
+        "n": 616,
+        "before_correct": 439,
+        "after_correct": 359,
+        "delta_pp": -12.987012987012987,
+        "wrong_to_right": 54,
+        "right_to_wrong": 134
+      },
+      "determiner_noun_agreement_2": {
+        "n": 616,
+        "before_correct": 415,
+        "after_correct": 339,
+        "delta_pp": -12.337662337662337,
+        "wrong_to_right": 30,
+        "right_to_wrong": 106
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "n": 616,
+        "before_correct": 341,
+        "after_correct": 328,
+        "delta_pp": -2.1103896103896105,
+        "wrong_to_right": 67,
+        "right_to_wrong": 80
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "n": 615,
+        "before_correct": 365,
+        "after_correct": 316,
+        "delta_pp": -7.967479674796748,
+        "wrong_to_right": 30,
+        "right_to_wrong": 79
+      },
+      "irregular_past_participle_verbs": {
+        "n": 616,
+        "before_correct": 592,
+        "after_correct": 545,
+        "delta_pp": -7.62987012987013,
+        "wrong_to_right": 17,
+        "right_to_wrong": 64
+      },
+      "distractor_agreement_relational_noun": {
+        "n": 616,
+        "before_correct": 244,
+        "after_correct": 256,
+        "delta_pp": 1.948051948051948,
+        "wrong_to_right": 118,
+        "right_to_wrong": 106
+      },
+      "passive_1": {
+        "n": 614,
+        "before_correct": 425,
+        "after_correct": 342,
+        "delta_pp": -13.517915309446254,
+        "wrong_to_right": 58,
+        "right_to_wrong": 141
+      },
+      "intransitive": {
+        "n": 608,
+        "before_correct": 427,
+        "after_correct": 369,
+        "delta_pp": -9.539473684210526,
+        "wrong_to_right": 63,
+        "right_to_wrong": 121
+      }
+    },
+    "before_macro_accuracy": 0.6606323623799589,
+    "after_macro_accuracy": 0.5804551726482882,
+    "paired_stratified_95ci_pp": [
+      -9.416310758592637,
+      -6.630058979052268
+    ],
+    "paired_macro_95ci_pp": [
+      -9.422353900950263,
+      -6.633256761833741
+    ],
+    "same_token_length": {
+      "n": 4106,
+      "before_correct": 2694,
+      "after_correct": 2335,
+      "before_accuracy": 0.6561130053580126,
+      "after_accuracy": 0.5686799805163176,
+      "delta_pp": -8.743302484169508,
+      "wrong_to_right": 378,
+      "right_to_wrong": 737,
+      "exact_two_sided_p": 2.8870903951971876e-27,
+      "by_paradigm": {
+        "anaphor_number_agreement": {
+          "n": 616,
+          "before_correct": 439,
+          "after_correct": 359,
+          "delta_pp": -12.987012987012987,
+          "wrong_to_right": 54,
+          "right_to_wrong": 134
+        },
+        "determiner_noun_agreement_2": {
+          "n": 616,
+          "before_correct": 415,
+          "after_correct": 339,
+          "delta_pp": -12.337662337662337,
+          "wrong_to_right": 30,
+          "right_to_wrong": 106
+        },
+        "regular_plural_subject_verb_agreement_2": {
+          "n": 567,
+          "before_correct": 319,
+          "after_correct": 307,
+          "delta_pp": -2.1164021164021163,
+          "wrong_to_right": 67,
+          "right_to_wrong": 79
+        },
+        "irregular_plural_subject_verb_agreement_2": {
+          "n": 491,
+          "before_correct": 293,
+          "after_correct": 242,
+          "delta_pp": -10.386965376782078,
+          "wrong_to_right": 26,
+          "right_to_wrong": 77
+        },
+        "irregular_past_participle_verbs": {
+          "n": 580,
+          "before_correct": 557,
+          "after_correct": 529,
+          "delta_pp": -4.827586206896552,
+          "wrong_to_right": 17,
+          "right_to_wrong": 45
+        },
+        "distractor_agreement_relational_noun": {
+          "n": 562,
+          "before_correct": 223,
+          "after_correct": 235,
+          "delta_pp": 2.1352313167259784,
+          "wrong_to_right": 116,
+          "right_to_wrong": 104
+        },
+        "passive_1": {
+          "n": 397,
+          "before_correct": 265,
+          "after_correct": 175,
+          "delta_pp": -22.670025188916878,
+          "wrong_to_right": 37,
+          "right_to_wrong": 127
+        },
+        "intransitive": {
+          "n": 277,
+          "before_correct": 183,
+          "after_correct": 149,
+          "delta_pp": -12.274368231046932,
+          "wrong_to_right": 31,
+          "right_to_wrong": 65
+        }
+      },
+      "before_macro_accuracy": 0.6538766633963717,
+      "after_macro_accuracy": 0.5595456744863793,
+      "paired_stratified_95ci_pp": [
+        -10.277642474427667,
+        -7.184607890891378
+      ],
+      "paired_macro_95ci_pp": [
+        -11.09902128698895,
+        -7.758504728165429
+      ]
+    },
+    "before_seconds": 25.60145120800007,
+    "after_seconds": 26.779221958015114
+  },
+  {
+    "model": "random_103102",
+    "n": 4917,
+    "before_correct": 3248,
+    "after_correct": 2773,
+    "before_accuracy": 0.6605653853976001,
+    "after_accuracy": 0.5639617653040472,
+    "delta_pp": -9.660362009355298,
+    "wrong_to_right": 442,
+    "right_to_wrong": 917,
+    "exact_two_sided_p": 1.3326429469181863e-38,
+    "by_paradigm": {
+      "anaphor_number_agreement": {
+        "n": 616,
+        "before_correct": 439,
+        "after_correct": 330,
+        "delta_pp": -17.694805194805195,
+        "wrong_to_right": 20,
+        "right_to_wrong": 129
+      },
+      "determiner_noun_agreement_2": {
+        "n": 616,
+        "before_correct": 415,
+        "after_correct": 328,
+        "delta_pp": -14.123376623376624,
+        "wrong_to_right": 29,
+        "right_to_wrong": 116
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "n": 616,
+        "before_correct": 341,
+        "after_correct": 341,
+        "delta_pp": 0.0,
+        "wrong_to_right": 80,
+        "right_to_wrong": 80
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "n": 615,
+        "before_correct": 365,
+        "after_correct": 312,
+        "delta_pp": -8.617886178861788,
+        "wrong_to_right": 39,
+        "right_to_wrong": 92
+      },
+      "irregular_past_participle_verbs": {
+        "n": 616,
+        "before_correct": 592,
+        "after_correct": 430,
+        "delta_pp": -26.2987012987013,
+        "wrong_to_right": 7,
+        "right_to_wrong": 169
+      },
+      "distractor_agreement_relational_noun": {
+        "n": 616,
+        "before_correct": 244,
+        "after_correct": 251,
+        "delta_pp": 1.1363636363636365,
+        "wrong_to_right": 122,
+        "right_to_wrong": 115
+      },
+      "passive_1": {
+        "n": 614,
+        "before_correct": 425,
+        "after_correct": 413,
+        "delta_pp": -1.9543973941368078,
+        "wrong_to_right": 87,
+        "right_to_wrong": 99
+      },
+      "intransitive": {
+        "n": 608,
+        "before_correct": 427,
+        "after_correct": 368,
+        "delta_pp": -9.703947368421053,
+        "wrong_to_right": 58,
+        "right_to_wrong": 117
+      }
+    },
+    "before_macro_accuracy": 0.6606323623799589,
+    "after_macro_accuracy": 0.564061424352535,
+    "paired_stratified_95ci_pp": [
+      -11.104331909701036,
+      -8.236729713239779
+    ],
+    "paired_macro_95ci_pp": [
+      -11.100076087308333,
+      -8.229379107359184
+    ],
+    "same_token_length": {
+      "n": 4106,
+      "before_correct": 2694,
+      "after_correct": 2250,
+      "before_accuracy": 0.6561130053580126,
+      "after_accuracy": 0.5479785679493424,
+      "delta_pp": -10.813443740867024,
+      "wrong_to_right": 384,
+      "right_to_wrong": 828,
+      "exact_two_sided_p": 6.395824396600964e-38,
+      "by_paradigm": {
+        "anaphor_number_agreement": {
+          "n": 616,
+          "before_correct": 439,
+          "after_correct": 330,
+          "delta_pp": -17.694805194805195,
+          "wrong_to_right": 20,
+          "right_to_wrong": 129
+        },
+        "determiner_noun_agreement_2": {
+          "n": 616,
+          "before_correct": 415,
+          "after_correct": 328,
+          "delta_pp": -14.123376623376624,
+          "wrong_to_right": 29,
+          "right_to_wrong": 116
+        },
+        "regular_plural_subject_verb_agreement_2": {
+          "n": 567,
+          "before_correct": 319,
+          "after_correct": 320,
+          "delta_pp": 0.1763668430335097,
+          "wrong_to_right": 80,
+          "right_to_wrong": 79
+        },
+        "irregular_plural_subject_verb_agreement_2": {
+          "n": 491,
+          "before_correct": 293,
+          "after_correct": 240,
+          "delta_pp": -10.79429735234216,
+          "wrong_to_right": 36,
+          "right_to_wrong": 89
+        },
+        "irregular_past_participle_verbs": {
+          "n": 580,
+          "before_correct": 557,
+          "after_correct": 414,
+          "delta_pp": -24.655172413793103,
+          "wrong_to_right": 7,
+          "right_to_wrong": 150
+        },
+        "distractor_agreement_relational_noun": {
+          "n": 562,
+          "before_correct": 223,
+          "after_correct": 231,
+          "delta_pp": 1.4234875444839858,
+          "wrong_to_right": 121,
+          "right_to_wrong": 113
+        },
+        "passive_1": {
+          "n": 397,
+          "before_correct": 265,
+          "after_correct": 243,
+          "delta_pp": -5.541561712846348,
+          "wrong_to_right": 63,
+          "right_to_wrong": 85
+        },
+        "intransitive": {
+          "n": 277,
+          "before_correct": 183,
+          "after_correct": 144,
+          "delta_pp": -14.07942238267148,
+          "wrong_to_right": 28,
+          "right_to_wrong": 67
+        }
+      },
+      "before_macro_accuracy": 0.6538766633963717,
+      "after_macro_accuracy": 0.5472656867809749,
+      "paired_stratified_95ci_pp": [
+        -12.420847540185093,
+        -9.206039941548951
+      ],
+      "paired_macro_95ci_pp": [
+        -12.357384582801354,
+        -8.950191932325469
+      ]
+    },
+    "before_seconds": 25.60145120800007,
+    "after_seconds": 25.181073874991853
+  },
+  {
+    "model": "random_103103",
+    "n": 4917,
+    "before_correct": 3248,
+    "after_correct": 2699,
+    "before_accuracy": 0.6605653853976001,
+    "after_accuracy": 0.5489119381736831,
+    "delta_pp": -11.165344722391703,
+    "wrong_to_right": 406,
+    "right_to_wrong": 955,
+    "exact_two_sided_p": 2.679623375853963e-51,
+    "by_paradigm": {
+      "anaphor_number_agreement": {
+        "n": 616,
+        "before_correct": 439,
+        "after_correct": 316,
+        "delta_pp": -19.967532467532468,
+        "wrong_to_right": 13,
+        "right_to_wrong": 136
+      },
+      "determiner_noun_agreement_2": {
+        "n": 616,
+        "before_correct": 415,
+        "after_correct": 352,
+        "delta_pp": -10.227272727272727,
+        "wrong_to_right": 38,
+        "right_to_wrong": 101
+      },
+      "regular_plural_subject_verb_agreement_2": {
+        "n": 616,
+        "before_correct": 341,
+        "after_correct": 319,
+        "delta_pp": -3.5714285714285716,
+        "wrong_to_right": 64,
+        "right_to_wrong": 86
+      },
+      "irregular_plural_subject_verb_agreement_2": {
+        "n": 615,
+        "before_correct": 365,
+        "after_correct": 334,
+        "delta_pp": -5.040650406504065,
+        "wrong_to_right": 38,
+        "right_to_wrong": 69
+      },
+      "irregular_past_participle_verbs": {
+        "n": 616,
+        "before_correct": 592,
+        "after_correct": 346,
+        "delta_pp": -39.935064935064936,
+        "wrong_to_right": 2,
+        "right_to_wrong": 248
+      },
+      "distractor_agreement_relational_noun": {
+        "n": 616,
+        "before_correct": 244,
+        "after_correct": 236,
+        "delta_pp": -1.2987012987012987,
+        "wrong_to_right": 111,
+        "right_to_wrong": 119
+      },
+      "passive_1": {
+        "n": 614,
+        "before_correct": 425,
+        "after_correct": 422,
+        "delta_pp": -0.48859934853420195,
+        "wrong_to_right": 82,
+        "right_to_wrong": 85
+      },
+      "intransitive": {
+        "n": 608,
+        "before_correct": 427,
+        "after_correct": 374,
+        "delta_pp": -8.717105263157896,
+        "wrong_to_right": 58,
+        "right_to_wrong": 111
+      }
+    },
+    "before_macro_accuracy": 0.6606323623799589,
+    "after_macro_accuracy": 0.5490744186072137,
+    "paired_stratified_95ci_pp": [
+      -12.58897701850722,
+      -9.762050030506407
+    ],
+    "paired_macro_95ci_pp": [
+      -12.579751189199248,
+      -9.75368578430595
+    ],
+    "same_token_length": {
+      "n": 4106,
+      "before_correct": 2694,
+      "after_correct": 2167,
+      "before_accuracy": 0.6561130053580126,
+      "after_accuracy": 0.5277642474427667,
+      "delta_pp": -12.834875791524599,
+      "wrong_to_right": 349,
+      "right_to_wrong": 876,
+      "exact_two_sided_p": 1.117212108240817e-52,
+      "by_paradigm": {
+        "anaphor_number_agreement": {
+          "n": 616,
+          "before_correct": 439,
+          "after_correct": 316,
+          "delta_pp": -19.967532467532468,
+          "wrong_to_right": 13,
+          "right_to_wrong": 136
+        },
+        "determiner_noun_agreement_2": {
+          "n": 616,
+          "before_correct": 415,
+          "after_correct": 352,
+          "delta_pp": -10.227272727272727,
+          "wrong_to_right": 38,
+          "right_to_wrong": 101
+        },
+        "regular_plural_subject_verb_agreement_2": {
+          "n": 567,
+          "before_correct": 319,
+          "after_correct": 298,
+          "delta_pp": -3.7037037037037037,
+          "wrong_to_right": 64,
+          "right_to_wrong": 85
+        },
+        "irregular_plural_subject_verb_agreement_2": {
+          "n": 491,
+          "before_correct": 293,
+          "after_correct": 262,
+          "delta_pp": -6.313645621181263,
+          "wrong_to_right": 35,
+          "right_to_wrong": 66
+        },
+        "irregular_past_participle_verbs": {
+          "n": 580,
+          "before_correct": 557,
+          "after_correct": 330,
+          "delta_pp": -39.13793103448276,
+          "wrong_to_right": 2,
+          "right_to_wrong": 229
+        },
+        "distractor_agreement_relational_noun": {
+          "n": 562,
+          "before_correct": 223,
+          "after_correct": 216,
+          "delta_pp": -1.2455516014234875,
+          "wrong_to_right": 110,
+          "right_to_wrong": 117
+        },
+        "passive_1": {
+          "n": 397,
+          "before_correct": 265,
+          "after_correct": 252,
+          "delta_pp": -3.27455919395466,
+          "wrong_to_right": 60,
+          "right_to_wrong": 73
+        },
+        "intransitive": {
+          "n": 277,
+          "before_correct": 183,
+          "after_correct": 141,
+          "delta_pp": -15.16245487364621,
+          "wrong_to_right": 27,
+          "right_to_wrong": 69
+        }
+      },
+      "before_macro_accuracy": 0.6538766633963717,
+      "after_macro_accuracy": 0.5300858493673751,
+      "paired_stratified_95ci_pp": [
+        -14.4179249878227,
+        -11.251826595226499
+      ],
+      "paired_macro_95ci_pp": [
+        -14.058558170203739,
+        -10.706105519332075
+      ]
+    },
+    "before_seconds": 25.60145120800007,
+    "after_seconds": 26.08340429200325
+  }
+]

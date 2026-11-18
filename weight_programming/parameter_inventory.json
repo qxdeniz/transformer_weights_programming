@@ -1,0 +1,185 @@
+{
+  "parameters": [
+    {
+      "name": "token_emb.weight",
+      "shape": [
+        114,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 912,
+      "alias_of": null
+    },
+    {
+      "name": "pos_emb.weight",
+      "shape": [
+        23,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 184,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.ln1.weight",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.ln1.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.attn.qkv.weight",
+      "shape": [
+        24,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 192,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.attn.qkv.bias",
+      "shape": [
+        24
+      ],
+      "dtype": "torch.float32",
+      "scalars": 24,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.attn.proj.weight",
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 64,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.attn.proj.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.ln2.weight",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.ln2.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.mlp.fc1.weight",
+      "shape": [
+        12,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 96,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.mlp.fc1.bias",
+      "shape": [
+        12
+      ],
+      "dtype": "torch.float32",
+      "scalars": 12,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.mlp.fc2.weight",
+      "shape": [
+        8,
+        12
+      ],
+      "dtype": "torch.float32",
+      "scalars": 96,
+      "alias_of": null
+    },
+    {
+      "name": "blocks.0.mlp.fc2.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "ln_f.weight",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "ln_f.bias",
+      "shape": [
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 8,
+      "alias_of": null
+    },
+    {
+      "name": "lm_head.weight",
+      "shape": [
+        114,
+        8
+      ],
+      "dtype": "torch.float32",
+      "scalars": 912,
+      "alias_of": "token_emb.weight"
+    }
+  ],
+  "buffers": [
+    {
+      "name": "blocks.0.attn.mask",
+      "shape": [
+        23,
+        23
+      ],
+      "dtype": "torch.bool",
+      "persistent": false
+    }
+  ],
+  "independent_scalars": 1644,
+  "config": {
+    "n_layer": 1,
+    "d_model": 8,
+    "n_head": 2,
+    "d_ff": 12,
+    "dropout": 0.0,
+    "max_seq_len": 23,
+    "vocab_size": 114
+  }
+}

@@ -1,0 +1,41 @@
+# Python environments and caches
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.matplotlib/
+.mplcache/
+
+# macOS and open Microsoft Office documents
+.DS_Store
+~$*
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Downloaded third-party sources and model checkpoints stay local.
+# Pinned downloaders and edit specifications are included in the project.
+upstream/
+checkpoints/
+sealed_final/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+weights.json
+
+# Manuscripts and article assets remain local.
+/paper/
+
+# Duplicate distribution archives and intermediate document renders
+*.zip
+render_without_numbers.pdf
+paper/article_*/page_[0-9][0-9].png
+paper/article_*/preview*.png
+paper/article_*/equations.docx
+paper/article_*/equations.md
+paper/style_reference_extracted.txt

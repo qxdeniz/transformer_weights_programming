@@ -1,0 +1,70 @@
+{
+  "selected": {
+    "id": "candidate_12",
+    "status": "complete",
+    "spec_sha256": "c694112af0c6e2cea81989a06d6b9a724018ac5ac368e6bf0c1fb0e8aa5048f6",
+    "validation_correct": 2031,
+    "wrong_to_right": 11,
+    "right_to_wrong": 4,
+    "changed_scalars": 52,
+    "total_independent_scalars": 1644,
+    "fraction": 0.031630170316301706,
+    "delta_l2": 0.5609934991661901,
+    "relative_l2": 0.025410954469646765,
+    "tensors": {
+      "token_emb.weight": {
+        "changed": 8,
+        "delta_l2": 0.3266023420055498,
+        "max_abs_delta": 0.16959643363952637
+      },
+      "blocks.0.attn.qkv.weight": {
+        "changed": 32,
+        "delta_l2": 0.12698824061587477,
+        "max_abs_delta": 0.055426955223083496
+      },
+      "blocks.0.attn.qkv.bias": {
+        "changed": 4,
+        "delta_l2": 0.01105240737189028,
+        "max_abs_delta": 0.00826418399810791
+      },
+      "ln_f.bias": {
+        "changed": 8,
+        "delta_l2": 0.4379457127770366,
+        "max_abs_delta": 0.27157849073410034
+      }
+    },
+    "preparation_seconds": 0.00785020797047764,
+    "checkpoint_sha256": "c3cbe12e56b9a1b547d42bf2952e2ee392d9625854197dbe7f5035ed069ed2fc"
+  },
+  "selected_sha256": "c3cbe12e56b9a1b547d42bf2952e2ee392d9625854197dbe7f5035ed069ed2fc",
+  "edit_spec_sha256": "c694112af0c6e2cea81989a06d6b9a724018ac5ac368e6bf0c1fb0e8aa5048f6",
+  "protocol_sha256": "dbf8c765fd349137a59fe5e4e66e5b20aa3ced4f14731d48fe4424c429de6aa4",
+  "evaluator_sha256": "291feffb49e921b0a2f7e277bd28d8b2436dc1ec65d90740107310f6c33e009b",
+  "inference_sha256": "c89cf213f8d337688c2c169e2afc4217497b6b7e4c73b00fab3755e045f5d719",
+  "random_controls": [
+    {
+      "seed": 71001,
+      "checkpoint": "random_71001.pt",
+      "sha256": "ded425ff95a9bafe9b6f1d6775347a9d03915e57889a7488dcbb68a8bc4f5274",
+      "delta_l2": 0.560993525360251,
+      "changed_scalars": 52
+    },
+    {
+      "seed": 71002,
+      "checkpoint": "random_71002.pt",
+      "sha256": "627cff51bafa7fe333d9363bb5f91c3b901b3ad7f9519f37e2ca018baca7eff2",
+      "delta_l2": 0.5609935157448274,
+      "changed_scalars": 52
+    },
+    {
+      "seed": 71003,
+      "checkpoint": "random_71003.pt",
+      "sha256": "f0597a75e664ffc709068698e31252b7d3cbb2a008c3a5040955c1ba70bf5f07",
+      "delta_l2": 0.5609934778513547,
+      "changed_scalars": 52
+    }
+  ],
+  "attempts_used": 12,
+  "final_metrics_accessed": false,
+  "frozen_utc": "2026-11-15T09:21:21.504539+00:00"
+}

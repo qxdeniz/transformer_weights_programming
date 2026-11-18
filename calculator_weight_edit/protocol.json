@@ -1,0 +1,88 @@
+{
+  "benchmark": "CalcWords-99 v1",
+  "model_parameters": 104740,
+  "primary_test": "test_uniform",
+  "primary_metric": "strict exact answer token sequence including END",
+  "datasets": {
+    "diagnostic": {
+      "n": 434,
+      "sha256": "751133c01d5237baa45b31a53a8aacb65bd7e96af2efb82aeb6b46808d2af95c",
+      "counts_by_operation": {
+        "plus": 200,
+        "minus": 200,
+        "times": 34
+      },
+      "seed": 83101
+    },
+    "validation": {
+      "n": 868,
+      "sha256": "5ff675756bf2d3a96988e86ef9a7dd1432dad33af812478f76106097147f6d3b",
+      "counts_by_operation": {
+        "plus": 400,
+        "times": 68,
+        "minus": 400
+      },
+      "seed": 83102
+    },
+    "test_uniform": {
+      "n": 2239,
+      "sha256": "f27866635fe30e4e3cede0bd82b6cd3137a3a6c0d0bf963ff4431f619c44f5a1",
+      "counts_by_operation": {
+        "minus": 1000,
+        "plus": 1000,
+        "times": 239
+      },
+      "seed": 83103
+    },
+    "test_exhaustive": {
+      "n": 10772,
+      "sha256": "14ad3375bea3ff1adc0572704191d6aeb2f068207b94d838325e19bdaa5d8db4",
+      "counts_by_operation": {
+        "plus": 5050,
+        "minus": 5050,
+        "times": 672
+      },
+      "seed": null
+    }
+  },
+  "deduplication": "operation plus unordered operands for plus/times; ordered operands for minus; one random orientation per canonical group in random splits",
+  "macro_metric": "unweighted mean of per-operation strict EM; primary alongside stratified micro EM (sample weights fixed in advance)",
+  "source_training_overlap": "Original GitHub generator repeats ALL valid tasks in training; no absence-from-model-training claim. Only editing splits are held out.",
+  "technical_preflight": "Use original GitHub training tokenizer. Space demo tokenizer corrupts x inside six/sixty. This is a pre-baseline compatibility fix, never a weight improvement.",
+  "sampling_note": "Stratified sample, not uniform over operations or ordered pairs. One orientation per commutative group; exhaustive includes all ordered pairs and development examples.",
+  "inference": {
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 1,
+    "seed": 82101,
+    "batch_size": 128,
+    "max_new_tokens": 8,
+    "algorithm": "original greedy argmax with END stop, equal-length batching verified against original single-example generate"
+  },
+  "validation_budget": 12,
+  "selection": [
+    "max validation strict_correct",
+    "min right_to_wrong",
+    "min changed_scalars",
+    "min delta_l2"
+  ],
+  "random_seeds": [
+    84101,
+    84102,
+    84103
+  ],
+  "bootstrap": {
+    "method": "stratified paired bootstrap within operation; fixed test stratum weights",
+    "replicates": 20000,
+    "seed": 85101,
+    "confidence": 0.95
+  },
+  "success": "Positive primary-test micro difference with lower 95% stratified paired CI > 0; all operation changes and exhaustive errors reported",
+  "final_access": "Separate-process baseline sealed until selected weights, spec and evaluator frozen",
+  "code_sha256": {
+    "data_protocol.py": "4cce7fb09a9713f4fe5a3eadffba1956821fadff42a7574e17c5349daad7f8f1",
+    "model_api.py": "ac78cd2590f26e31585336126818fcb2e201c930fe556c9fd5704bf76386b5d1",
+    "edit_weights.py": "3dcff31ce3312cd50e2cf2787e0a73069f799982d9f0c4bd10512d4bbd73b374",
+    "experiment.py": "b4d60cf752d8692c42cbd3f666febcc55d65463967d2139c36b12c4b26bf08cc"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "benchmark": "TinyStories broad-weight BLiMP study v1",
+  "paradigms": [
+    "anaphor_number_agreement",
+    "determiner_noun_agreement_2",
+    "regular_plural_subject_verb_agreement_2",
+    "irregular_plural_subject_verb_agreement_2",
+    "irregular_past_participle_verbs",
+    "distractor_agreement_relational_noun",
+    "passive_1",
+    "intransitive"
+  ],
+  "datasets": {
+    "diagnostic": {
+      "n": 1024,
+      "sha256": "d4b66f7b71dae396f26220f082f93c8ef1d5eabc65115690c721925882cf5dff",
+      "by_paradigm": {
+        "irregular_past_participle_verbs": 128,
+        "regular_plural_subject_verb_agreement_2": 128,
+        "intransitive": 128,
+        "distractor_agreement_relational_noun": 128,
+        "anaphor_number_agreement": 128,
+        "irregular_plural_subject_verb_agreement_2": 128,
+        "determiner_noun_agreement_2": 128,
+        "passive_1": 128
+      }
+    },
+    "validation": {
+      "n": 2048,
+      "sha256": "ff0e4e233088ea9fe797066ddde35859f35fc00f5dbe1d207879a605b7e110be",
+      "by_paradigm": {
+        "regular_plural_subject_verb_agreement_2": 256,
+        "passive_1": 256,
+        "irregular_past_participle_verbs": 256,
+        "determiner_noun_agreement_2": 256,
+        "irregular_plural_subject_verb_agreement_2": 256,
+        "intransitive": 256,
+        "distractor_agreement_relational_noun": 256,
+        "anaphor_number_agreement": 256
+      }
+    },
+    "test": {
+      "n": 4917,
+      "sha256": "af7744ec3dfb207553d6ae52101cd5fcc89318278bf9561f7221995cfa3ad9de",
+      "by_paradigm": {
+        "passive_1": 614,
+        "determiner_noun_agreement_2": 616,
+        "distractor_agreement_relational_noun": 616,
+        "regular_plural_subject_verb_agreement_2": 616,
+        "irregular_plural_subject_verb_agreement_2": 615,
+        "intransitive": 608,
+        "irregular_past_participle_verbs": 616,
+        "anaphor_number_agreement": 616
+      }
+    }
+  },
+  "deduplication": {
+    "anaphor_number_agreement": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "determiner_noun_agreement_2": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "regular_plural_subject_verb_agreement_2": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "irregular_plural_subject_verb_agreement_2": {
+      "source_n": 1000,
+      "retained_n": 999,
+      "duplicate_or_shared_sentence_removed": 1
+    },
+    "irregular_past_participle_verbs": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "distractor_agreement_relational_noun": {
+      "source_n": 1000,
+      "retained_n": 1000,
+      "duplicate_or_shared_sentence_removed": 0
+    },
+    "passive_1": {
+      "source_n": 1000,
+      "retained_n": 998,
+      "duplicate_or_shared_sentence_removed": 2
+    },
+    "intransitive": {
+      "source_n": 1000,
+      "retained_n": 992,
+      "duplicate_or_shared_sentence_removed": 8
+    }
+  },
+  "sampling": "Named paradigms selected for linguistic coverage before running this model; shuffle/dedup before any model outputs. Remove every exact shared sentence globally, even within a split.",
+  "seeds": {
+    "dedup_shuffle_base": 102101,
+    "diagnostic_base": 102201,
+    "validation_base": 102301,
+    "test_base": 102401,
+    "split_order": [
+      102501,
+      102502,
+      102503
+    ]
+  },
+  "model": "roneneldan/TinyStories-1M",
+  "independent_parameters": 3745984,
+  "primary_metric": "pair accuracy: raw summed log P(sentence_good | BOS) > raw summed log P(sentence_bad | BOS); exact ties counted wrong",
+  "secondary_metrics": [
+    "macro accuracy over paradigms",
+    "raw log-likelihood margin",
+    "same-token-length pair accuracy",
+    "diagnostic greedy generations (illustrative only)"
+  ],
+  "scoring": "Official Transformers GPT-Neo forward, eager attention, causal likelihood; teacher-forced sentence scoring is standard for BLiMP, unlike the separate addition task. No EOS, length normalization, or response repair.",
+  "inference": {
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 1,
+    "seed": 101101,
+    "score_batch_size": 16,
+    "bos_id": 50256,
+    "context_limit": 2048,
+    "generation_tokens": 48,
+    "greedy": true
+  },
+  "validation_budget": 12,
+  "minimum_changed_candidate_scalars": 10000,
+  "edit_scope": "Existing full attention/FFN projection matrices across transformer blocks; no global output-temperature-only candidate",
+  "selection": [
+    "max validation correct",
+    "min right_to_wrong",
+    "min changed_scalars",
+    "min delta_l2"
+  ],
+  "controls": {
+    "zero_edit": true,
+    "rollback": true,
+    "random_seeds": [
+      103101,
+      103102,
+      103103
+    ],
+    "random_match": "same actual nonzero mask and L2 norm"
+  },
+  "statistics": {
+    "method": "paired bootstrap stratified by paradigm, fixed observed test weights",
+    "replicates": 20000,
+    "seed": 104101,
+    "confidence": 0.95
+  },
+  "success": "Require positive test micro difference with stratified 95% paired CI lower > 0 AND positive same-token-length subset difference with stratified 95% paired CI lower > 0. Report all paradigm regressions. This intersection rule is fixed before edits.",
+  "scope": "8 of 67 BLiMP paradigms, disjoint from the earlier Glimmer study; no comparison of raw accuracy across these different subsets; no claim of general intelligence",
+  "contamination": "Original TinyStories training stream not audited for these benchmark sentences. BLiMP held out from editing, not certified absent from original training. Templates and vocabulary are shared across splits.",
+  "sealing": "Baseline test evaluated in separate process, outcomes sealed until checkpoint/spec/code/protocol freeze; development then closes",
+  "code_sha256": {
+    "language_model.py": "c05c7571f69b6cfffedc045a17aad44772eab2d7d447d90e7ac7acc3c174bc68",
+    "benchmark.py": "7f69529441aab3b883d053daec8c5beedca34742f74af2a5d22875eb5a625526",
+    "edit_weights.py": "b8397aabb3dc5f37c74c7a6b7d6eae3914f0a2c5128ef9bdb2a59b2ba7d66077",
+    "experiment.py": "ba77a4d46976b2cada88095218793bfcdd1cdf06a987b239a24afa3634fc1a0b",
+    "reporting.py": "0aa5dc8e8dbbb10b54bc4809ea06c2b262a7b2cc6c656f6e2d1b3a9221ae972e"
+  }
+}

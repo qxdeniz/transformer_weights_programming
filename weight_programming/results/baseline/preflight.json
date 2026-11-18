@@ -1,0 +1,8 @@
+{
+  "upstream_agreement_examples": 100,
+  "token_predictions_equal": true,
+  "repeated_predictions_equal": true,
+  "zero_edit_equal": true,
+  "new_process_equal": true,
+  "base_sha256": "a919e48dca049119369bec56b76a07a9cb4c804bc94c13aba9ade0c33092c7ec"
+}

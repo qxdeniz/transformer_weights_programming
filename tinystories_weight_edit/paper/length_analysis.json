@@ -1,0 +1,17 @@
+{
+  "same": {
+    "n": 4106,
+    "before_correct": 2694,
+    "after_correct": 2694
+  },
+  "good_longer": {
+    "n": 268,
+    "before_correct": 73,
+    "after_correct": 70
+  },
+  "good_shorter": {
+    "n": 543,
+    "before_correct": 481,
+    "after_correct": 483
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "n": 434,
+  "strict_correct": 434,
+  "strict_em": 1.0,
+  "text_em": 1.0,
+  "format_validity": 1.0,
+  "by_operation": {
+    "plus": {
+      "n": 200,
+      "correct": 200,
+      "em": 1.0
+    },
+    "minus": {
+      "n": 200,
+      "correct": 200,
+      "em": 1.0
+    },
+    "times": {
+      "n": 34,
+      "correct": 34,
+      "em": 1.0
+    }
+  },
+  "macro_em": 1.0,
+  "inference_seconds": 0.09242116700625047,
+  "termination_counts": {
+    "END": 434
+  },
+  "checkpoint_sha256": "b9c9e6959d42971a604bc237412f284f25e96675ee076538b461127374208d8b"
+}

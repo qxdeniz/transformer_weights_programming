@@ -1,0 +1,12 @@
+[
+  {
+    "reason": "Correct GPT-Neo tied-embedding assertion before any candidate validation evaluation",
+    "before_protocol_sha256": "45ab73fc24519f655b79698bf8f9bb443543265b4c39e2ae14155f6a31a55f75",
+    "after_protocol_sha256": "90419716a8f2c6ca96e9a641fbc69b0bb008b22651e991df2110d14e0de5415a",
+    "old_evaluator_sha256": "d5ab3e68f20edadf39050a03378838bf814c87edb1df97992e005c2fe625f2ac",
+    "new_evaluator_sha256": "ba77a4d46976b2cada88095218793bfcdd1cdf06a987b239a24afa3634fc1a0b",
+    "data_metrics_seeds_budget_unchanged": true,
+    "completed_validation_evaluations_at_change": 0,
+    "technical_failure_log": "results/technical_failures/alias_check_before_validation"
+  }
+]

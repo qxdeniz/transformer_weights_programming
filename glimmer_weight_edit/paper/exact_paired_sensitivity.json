@@ -1,0 +1,7 @@
+{
+  "status": "post-finalization sensitivity analysis; no model selection",
+  "test": "two-sided exact binomial test conditional on discordant paired outcomes",
+  "discordant_pairs": 4,
+  "p_value": 0.125,
+  "predeclared_primary": "paired stratified percentile bootstrap"
+}

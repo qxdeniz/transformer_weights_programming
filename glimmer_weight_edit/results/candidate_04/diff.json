@@ -1,0 +1,13 @@
+{
+  "changed_scalars": 16,
+  "total_scalars": 11856,
+  "fraction": 0.001349527665317139,
+  "delta_l2": 1.0967919777408952,
+  "relative_l2": 0.10437248194163538,
+  "tensors": {
+    "model.norm.weight": {
+      "changed": 16,
+      "delta_l2": 1.0967919777408952
+    }
+  }
+}

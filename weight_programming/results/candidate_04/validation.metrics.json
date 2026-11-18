@@ -1,0 +1,166 @@
+{
+  "n": 2048,
+  "strict_correct": 2024,
+  "strict_em": 0.98828125,
+  "upstream_digits_em": 0.9892578125,
+  "numeric_accuracy": 0.9892578125,
+  "format_validity": 0.9990234375,
+  "per_digit_accuracy_lsd_first": [
+    1.0,
+    0.99951171875,
+    1.0,
+    1.0,
+    0.9970703125,
+    0.99951171875,
+    1.0,
+    1.0,
+    0.9990234375,
+    0.99853515625,
+    0.99560546875
+  ],
+  "inference_seconds": 0.41697687504347414,
+  "examples_per_second": 4911.5433554594,
+  "termination_counts": {
+    "eos_at_expected_position": 2046,
+    "malformed_or_missing_eos": 2
+  },
+  "by_category": {
+    "label:carry_chain": {
+      "n": 1443,
+      "correct": 1425,
+      "strict_em": 0.9875259875259875
+    },
+    "label:leading_zeros_10_digit_input": {
+      "n": 830,
+      "correct": 813,
+      "strict_em": 0.9795180722891567
+    },
+    "label:no_carry": {
+      "n": 244,
+      "correct": 242,
+      "strict_em": 0.9918032786885246
+    },
+    "label:overflow11": {
+      "n": 600,
+      "correct": 595,
+      "strict_em": 0.9916666666666667
+    },
+    "label:power10": {
+      "n": 128,
+      "correct": 127,
+      "strict_em": 0.9921875
+    },
+    "label:single_carry": {
+      "n": 280,
+      "correct": 277,
+      "strict_em": 0.9892857142857143
+    },
+    "label:zero_operand": {
+      "n": 128,
+      "correct": 127,
+      "strict_em": 0.9921875
+    },
+    "max_chain:0": {
+      "n": 244,
+      "correct": 242,
+      "strict_em": 0.9918032786885246
+    },
+    "max_chain:1": {
+      "n": 361,
+      "correct": 357,
+      "strict_em": 0.9889196675900277
+    },
+    "max_chain:10": {
+      "n": 67,
+      "correct": 67,
+      "strict_em": 1.0
+    },
+    "max_chain:2": {
+      "n": 362,
+      "correct": 354,
+      "strict_em": 0.9779005524861878
+    },
+    "max_chain:3": {
+      "n": 349,
+      "correct": 345,
+      "strict_em": 0.9885386819484241
+    },
+    "max_chain:4": {
+      "n": 175,
+      "correct": 174,
+      "strict_em": 0.9942857142857143
+    },
+    "max_chain:5": {
+      "n": 131,
+      "correct": 129,
+      "strict_em": 0.9847328244274809
+    },
+    "max_chain:6": {
+      "n": 140,
+      "correct": 139,
+      "strict_em": 0.9928571428571429
+    },
+    "max_chain:7": {
+      "n": 70,
+      "correct": 70,
+      "strict_em": 1.0
+    },
+    "max_chain:8": {
+      "n": 75,
+      "correct": 75,
+      "strict_em": 1.0
+    },
+    "max_chain:9": {
+      "n": 74,
+      "correct": 72,
+      "strict_em": 0.972972972972973
+    },
+    "source:chain_long": {
+      "n": 256,
+      "correct": 254,
+      "strict_em": 0.9921875
+    },
+    "source:chain_medium": {
+      "n": 256,
+      "correct": 256,
+      "strict_em": 1.0
+    },
+    "source:chain_short": {
+      "n": 256,
+      "correct": 255,
+      "strict_em": 0.99609375
+    },
+    "source:leading_zeros": {
+      "n": 128,
+      "correct": 115,
+      "strict_em": 0.8984375
+    },
+    "source:overflow11": {
+      "n": 128,
+      "correct": 128,
+      "strict_em": 1.0
+    },
+    "source:power10": {
+      "n": 128,
+      "correct": 127,
+      "strict_em": 0.9921875
+    },
+    "source:single_carry": {
+      "n": 256,
+      "correct": 253,
+      "strict_em": 0.98828125
+    },
+    "source:uniform": {
+      "n": 512,
+      "correct": 509,
+      "strict_em": 0.994140625
+    },
+    "source:zero": {
+      "n": 128,
+      "correct": 127,
+      "strict_em": 0.9921875
+    }
+  },
+  "checkpoint_sha256": "aad953f0dbf691692384851c71a0478b77057b1253214b167674c697a23747ad",
+  "data_sha256": "7a80a10e1c891c7ca7b9b8d0ec1517007a36038ead0203b4b5a33357d3b69cc4"
+}

@@ -1,0 +1,37 @@
+{
+  "family": "H1",
+  "coefficient": 1.3,
+  "hypothesis": "Head 1 is usually a near-one-hot current-column reader; sharpen the existing attention scores by scaling its query affine map.",
+  "evidence": "Diagnostic 00897: head 1 puts 0.855 on current P52 but 0.129 on previous P00; 00218 and 00366 also show current-column contamination.",
+  "formula": "Wq[4:8,:] *= factor; bq[4:8] *= factor. QK scores for head 1 scale by factor; K,V,projection and all architecture stay fixed.",
+  "prediction": "Reduced contamination where the correct source already ranks first; middle-digit and final-carry errors may decrease.",
+  "risk": "Sharpening a wrong first-ranked location can reinforce it and introduce regressions.",
+  "operations": [
+    {
+      "kind": "scale",
+      "tensor": "blocks.0.attn.qkv.weight",
+      "slices": [
+        [
+          4,
+          8
+        ],
+        [
+          null,
+          null
+        ]
+      ],
+      "factor": 1.3
+    },
+    {
+      "kind": "scale",
+      "tensor": "blocks.0.attn.qkv.bias",
+      "slices": [
+        [
+          4,
+          8
+        ]
+      ],
+      "factor": 1.3
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "official_loader_equal": true,
+  "single_batch_score_agreement_sentences": 100,
+  "repeat_equal": true,
+  "zero_edit_equal": true,
+  "test_sealed": true,
+  "base_sha256": "e61d0b7487386d59d6bf6d62bb9cab28e43b3be18c678f00a9a27cdf41e86c01"
+}
